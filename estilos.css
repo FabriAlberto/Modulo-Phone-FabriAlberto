@@ -1,0 +1,761 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+/* INDEX //////////////////////////////////////////////////////////*/
+body{
+    background-color: #1C2641;
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main  main  main   main'
+    'footer footer footer footer'
+    ;
+    font-size: 16px;
+}
+/* HEADER */
+
+header{
+    grid-area: header;
+    background-image:url(./imagenes/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+    text-align: center;
+}
+.header__logo{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.a__logo{
+    height: 50px;
+}
+li{
+    list-style: none;
+}
+.header__ul__li{
+    display: inline-block;
+    margin: 5px;
+}
+.header__div{
+    display: flex;
+    justify-content: center;    
+}
+.header__ul{
+    width: 50%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    /* text-align: center; */
+    background-color: #1C2641;
+    border-radius: 5px;
+    position: fixed;
+
+}
+
+header a{
+
+    text-decoration: none;
+    font-weight: 600;
+    color: #ECECEC;
+    font-size: 1em;
+}
+
+
+h1{
+    display:inline-block;
+
+    /* background-color: #ECECEC; */
+    color: #1C2641;
+    /* background-color: #E4E8EB; */
+    margin-top: 190px;
+    font-size: 2.8125em;
+    font-weight: 600;
+    
+
+}
+/* MAIN///////////// */
+.inicio, .quienessomos, .celulares, .trabajos, .contactanos{
+
+
+    color: #EB714B
+}
+
+.encabezado__h2{
+    color: #EB714B;
+    font-size: 2.1875em;
+    font-weight: 600;
+}
+.encabezado__h4{
+    color: #ECECEC;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.encabezado{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.encabezado__p{
+    color: #ECECEC;
+    text-align:center;
+    margin-top: 10px;
+}
+/* .encabezado__contenedor{
+    
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; */
+
+.main{
+    grid-area: main;
+}
+.servicio{
+    width: 100%;
+    height: 600px;
+    /* background-color:#6CCEBF; */
+    background-color:#1C2641;
+}
+.servicio__titulo{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.servicio__h3{
+    text-align:start;
+    color: #EB714B;
+    font-size: 2.1875rem;
+}
+.servicio__p{
+    color: #ECECEC;
+    text-align: start;
+    font-size: 1.25em;
+}
+.galeria__img__servicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.servicio__img{
+    display: inline-block;
+    object-fit:contain;
+    width: 12.5rem;
+    height: 18.75rem;
+    margin: 60px;
+    background-color: #EB714B;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 30px #000;
+    text-align: center;
+}
+.img__3{
+    width: 155.84px;
+}
+.servicio img{
+    height: 200px;
+    
+}
+.servicio__img3__a{
+    display: inline-block;
+    color: #ECECEC;
+    background-color: #1C2641;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
+.calidad{
+
+    margin-top: 100px;
+    background-color: #1C2641;
+    /* padding: 95px 50px 50px 50px; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+}
+/* .calidad__video, .calidad__titulo{
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 40px;
+} */
+.calidad__titulo{
+    display: flex;
+    width: 50%;
+    height: 500px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    text-align: center;
+
+}
+.calidad__video{
+    display: flex;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.calidad__h3{
+    color: #EB714B;
+    font-size: 2.1875em;
+}
+.calidad__h3__p{
+
+    color: #ECECEC;
+    font-size:1.25em;
+    font-weight: 600;
+}
+.boton__calidad{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calidad__a{
+    font-size: 1em;
+    color: #ECECEC ;
+    text-decoration: none;
+    background-color: #EB714B;
+    padding:10px;
+    border-radius: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.garantia{
+    width: 100%;
+    height: 600px;
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+}
+.garantia__titulo{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.h3__garantia{
+    font-size: 2.1875em;
+    color: #EB714B;
+    text-align: center;
+}
+.h3__garantia__p{
+    text-align: center;
+    color: #ECECEC;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.carrusel-fotos__garantia{
+    margin-top: 50px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    padding: none;
+    background-color: #EB714B;
+    align-items: center;
+    justify-content: center;
+}
+.boton__vermas__a{
+    margin-top: 80px;
+    text-decoration: none;
+    text-align:center;
+    background-color: #EB714B;
+   /*  background-image: linear-gradient( #EB714B, #1C2641); */
+    padding: 10px;
+    font-size: 1em;
+    color: #ECECEC;
+    border-radius: 20px;
+}
+.boton__vermas{
+   height: 100px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* FOOTER//////////////////////////// */
+.footer{
+    grid-area: footer;
+    margin-top: 80px;
+    width: 100%;
+    height:300px;
+
+
+}
+.footer__1{
+    width: 100%;
+    height:200px;
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   box-shadow: 15px 10px 30px #000; 
+
+}
+.footer__redes{
+    height: 200px;
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer__redes a{
+    font-size: 1em;
+    color: #EB714B;
+}
+.footer__contacto{
+    width: 50%;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+.footer__contacto p{
+font-size: 1em;
+    color: #EB714B;
+}
+.h2__redes{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ECECEC;
+}
+.h2__contacto__footer {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #ECECEC; 
+
+}
+.footer__2{
+ width: 100%;
+ height: 100px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+
+}
+.footer__2 p{
+    font-size: 1em;
+    color:#ECECEC;
+}
+
+ /*  ///////////////   SIGUIENTE PAGINA:    QUIENES SOMOS?/////////////////////////////////////////////////*/
+
+.logo__somos{
+    width: 250px;
+    object-fit: contain;
+}
+.somos{
+    background-color: #1C2641;
+    width: 100%;
+    height: 800px;
+}
+.section-somos{
+
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section-somos__titulo{
+
+    background-color: #EB714B;
+    height:350px ;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.section-somos2{
+    height: 400px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-end;
+    
+
+    
+}
+.section-somos2__p{
+    font-size: 1em;
+    background-color: #EB714B;
+    height:350px ;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* SIGUIENTE PAGINA:     TRABAJOS//////////////////////////// */
+
+.trabajos__section{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top:  solid #EB714B 10px;
+    border-bottom:  solid #EB714B 10px;
+    
+}
+.trabajos__section__servicios{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.trabajos__section__img{
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.robot{
+    border-radius: 50%;
+    width: 300px;
+
+}
+.h3__trabajos{
+    font-size: 2.1875em;
+    font-weight: 600;
+    color: #EB714B;
+}
+.h4__trabajos{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #E7E8EC;
+    border-bottom: solid #E7E8EC 1px;
+}
+.trabajos__ul__li{
+    list-style: none;
+    margin: 20px ;
+    color: #E7E8EC;
+
+}
+
+
+.h3__main{
+    color: #E7E8EC;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+.reparaciones{
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+
+}
+.reparaciones__img{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.img__reparaciones{
+    width: 150px;
+    object-fit: contain;
+}.reparaciones__2, .reparaciones__4{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.p__trabajos{
+font-size: 0.9375em;
+color: #E7E8EC;
+}
+
+/* /////////////////////CELULARES/////////////// */
+
+.nuevos{
+width: 100%;
+height: 600px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.h3__nuevos{
+    text-align: center;
+    color: #EB714B;
+    font-size: 2.5em;
+    margin-top: 20px;
+    border-bottom: solid #E7E8EC 1px;
+}
+.celularN{
+    width: min-content;
+    height: 300px;
+    background-color: #E7E8EC;
+    display: flex;
+}
+.usados{
+    width: 100%;
+height: 600px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.h3__usados{
+    text-align: center;
+    color: #EB714B;
+    font-size: 2.5em;
+    margin-top: 20px;
+    border-bottom: solid #E7E8EC 1px;
+}
+.celularU{
+    width: 300px;
+    height: 300px;
+    background-color: #E7E8EC;
+    display: flex;
+}
+
+.img__nuevos{
+    height: 200px;
+    
+
+}
+/* //////////CONTACTO///////// */
+.contacto{
+    width: 100%;
+    height: 655px;
+    display: flex;
+    flex-direction: row;
+}
+.contacto__direccion{
+    width: 50%;
+    height: 665px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contacto__ubicacion{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h2__contacto{
+    color: #EB714B;
+    font-size: 2.1875em;
+    font-weight: 600;
+}
+.h3__ubicacion{
+    color: #EB714B;
+    font-weight: 600;
+    font-size: 2.1875em;
+    margin-bottom: 20px;
+}
+.h3__direccion{
+    color: #E7E8EC;
+    font-weight: 600;
+}
+.contacto__direccion__p{
+font-size: 18px;
+color: #E7E8EC
+}
+.formularios{
+    width: 100%;
+    display: flex;
+    flex-direction:row   ;
+}
+.formularios__contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+.formularios__contenedor-2{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+    width: 50%;
+}
+.h3__dudas{
+    font-size:2.1875em ;
+    color: #EB714B;
+    margin-bottom: 15px;
+}
+.h3__presupuestos{
+    font-size:2.1875em ;
+    color: #EB714B;
+    margin-bottom: 15px;
+}   
+.formularios label{
+    color: #EB714B;
+}
+
+
+
+@media only screen and (max-width: 576px){
+
+.header__ul{
+    width: 100%;
+    border-radius: 0px;
+    font-size: 16px;
+}
+h1{
+    margin-top: 50%;
+    background-color:#1C2641;
+    color: #E7E8EC;
+}
+.galeria__img__servicios{
+    flex-direction: column;
+}
+body{
+    font-size: 14px;
+}
+.servicio{
+    height: 1500px;
+}
+.servicio__titulo{
+    width: 100%;
+}
+
+.calidad__titulo{
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+}
+.calidad__video{
+    width: 100%;
+}
+.calidad{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.calidad__titulo{
+    order:-1;
+}
+
+.footer__1{
+    flex-direction: column;
+    height: 400px;
+}
+.footer__redes{
+    width: 100%;
+}
+.footer__contacto{
+    width: 100%;
+}
+/* ///////////QUIENES SOMOS////////// */
+
+.section-somos, .section-somos2{
+    width: 100%;
+    justify-content: center;
+    
+}
+.section-somos__titulo{
+    flex-direction: column;
+    justify-content: center;
+
+}
+.section-somos2__p{
+    padding: 50px;
+    font-weight: 600;
+
+background-color: #EB714B;
+}
+/* //////////TRABAJOS/////// */
+.trabajos__section{
+    height: 800px;
+    flex-direction: column;
+}
+.trabajos__section__servicios{
+    margin-top: 30px;
+}
+.reparaciones__img{
+    flex-direction: column;
+    margin-top: 60px;
+}
+.reparaciones{
+    height: 1700px;
+}
+.p__trabajos{
+    font-size: 16px;
+}
+
+/* /////CELULARES////// */
+
+
+.nuevos{
+    flex-direction: column;
+    height: 750px;
+}
+.celularN{
+    margin: 10px;
+}
+.usados{
+    flex-direction: column;
+    height: 750px;
+    margin-top: 15px;
+}
+.celularU{
+margin: 10px;
+padding: 20px;
+}
+/* /////////CONTACTANOS//// */
+.contacto{
+    flex-direction: column;
+    height: 100vh;
+}
+.contacto__direccion, .contacto__ubicacion{
+    width: 100%;
+}
+.formularios{
+    flex-direction: column;
+}
+.formularios__contenedor, .formularios__contenedor-2{
+    margin-top: 50px;
+    width: 100%;
+}
+
+}

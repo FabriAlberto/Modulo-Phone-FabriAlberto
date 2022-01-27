@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo Phone</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" href="../imagenes/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__div">
+            <ul class="header__ul">
+                <a class="a__logo" href="../index.html">
+                    <img class=" header__logo" src="../imagenes/logo.jpg" alt="logo moduloPhone">
+                </a>
+                <li class="header__ul__li"><a href="../index.html">Inicio</a></li>
+                <li class="header__ul__li"><a href="somos.html">Quienes Somos</a></li>
+                <li class="header__ul__li"><a href="trabajos.html">Trabajos</a></li>
+                <li class="header__ul__li"><a href="celulares.html">Celulares</a></li>
+                <li class="header__ul__li"><a class="contactanos" href="contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
+
+        <h1 class="h1__index">
+            CONTACTANOS
+        </h1>
+
+    </header>
+
+
+
+    <main class="main">
+        <section class="contacto">
+            <div class="contacto__direccion">
+                <h2 class="h2__contacto">
+                    Contacto
+                </h2>
+                <h3 class="h3__direccion">Direccion</h3>
+                <p class=" contacto__direccion__p"> S.S. De Jujuy -Jujuy Barrio las Marias calle333</p>
+            </div>
+            <div class="contacto__ubicacion">
+                <H3 class="h3__ubicacion">Nuestra ubicacion</H3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116449.47328827505!2d-65.37559602908044!3d-24.20516706472203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1640473550763!5m2!1ses!2sar"
+                    width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <Section class="formularios">
+            <div class="formularios__contenedor">
+                <h3 class="h3__dudas">Tenes alguna duda o consulta?</h3>
+                <form class="form__dudas">
+                    <ul>
+                        <li>
+                            <label for="nombres">Nombres:</label>
+                            <input type="text" id="nombres">
+                            <label for="Apellido"> Apellido:</label>
+                            <input type="text" id="Apellido">
+                        </li>
+                        <li> <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="nombre@ejemplo.com">
+                        </li>
+                        <li> <textarea placeholder="Escriba su duda o consulta" name="" id="" cols="30"
+                                rows="10"></textarea>
+                        </li>
+                    </ul>
+                    <input type="submit" id="enviar" value="Enviar">
+                    <input type="reset" id="borrar" value="Borrar">
+                </form>
+            </div>
+
+            <div class="formularios__contenedor-2">
+                <h3 class="h3__presupuestos">Presupuestos</h3>
+                <form class="presupuestos">
+                    <ul>
+                        <li>
+                            <label for="gmail">Email</label>
+                            <input type="email" id="gmail" placeholder="nombre@ejemplo.com">
+                        </li>
+                        <li>
+                            <label for="marca">Marca:</label>
+                            <select name="marca" id="marca">
+                                <option value="#"> </option>
+                                <option value="samsung">Samsung</option>
+                                <option value="xiaomi">Xiaomi</option>
+                                <option value="lg">Lg</option>
+                                <option value="motorola">Motorola</option>
+                                <option value="apple">Apple</option>
+                            </select>
+                            <label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo">
+                        </li>
+                        <li>
+                            <label for="Problema">Problema:</label>
+                            <select name="Problema" id="Problema">
+                                <option value=""> </option>
+                                <option value="">Cambio de modulo</option>
+                                <option value="">Cambio de Display y/o touch</option>
+                                <option value="">Cambio de Camara/s</option>
+                                <option value="">Cambio de Boton/es</option>
+                                <option value="">Cambio de Bateria</option>
+                                <option value="">Cambio de pin o placa de carga</option>
+                                <option value="">Cambio de Parlante,microfono,sensor</option>
+                                <option value="">Cambio de Tapa</option>
+                                <option value="">OTROS</option>
+                                <input type="text" id="otros" placeholder="Otros">
+                            </select>
+
+                        </li>
+
+                    </ul>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+            </div>
+        </Section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__1">
+            <div class="footer__redes">
+                <h2 class="h2__redes">Seguinos en nuestras redes</h2>
+                <a class="a__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980"
+                    target="_blank">Facebook</a>
+                <a class="a__redes__instagram" href="https//:Instagram.com" target="_blank">Instagram</a>
+                <a class="a__redes__youtube" href="https//:youtube.com" target="_blank">Youtube</a>
+            </div>
+            <div class="footer__contacto">
+                <H2 class="h2__contacto__footer">Contacto</H2>
+                <p>Correo: Fabriciohugoalberto16@gmail.com</p>
+                <p>Cel: +54 388-4446728</p>
+            </div>
+        </div>
+        <div class="footer__2">
+            <p>Jujuy | ARGENTINA</p>
+            <P>Sitio realizado por Fabricio_Alberto </P>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
