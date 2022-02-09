@@ -593,18 +593,49 @@ font-size: 1em;
     height: 800px;
 }
 .section-somos{
-
+margin-top: 50px;
     width: 100%;
     height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-bottom: 50px;
+}
+.section-somos__svg{
+    height: 200px;
+    margin: auto;
+    
+
+}
+.section-somos__svg:hover{
+
+    animation-name: balanceo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+
+}
+@keyframes balanceo {
+    0%{
+transform: rotate(10deg);
+    }
+     100%{
+        transform: rotate(-10deg);
+    }
+    
+}
+.section-somos2__svg{
+    height: 200px;
+    margin: auto;
+    
 }
 .section-somos__titulo{
 
     background-color: #EB714B;
     height:350px ;
     width: 50%;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -613,21 +644,30 @@ font-size: 1em;
 .section-somos2{
     height: 400px;
     width: 100%;
-    
     display: flex;
     justify-content: flex-end;
-    
-
-    
+}
+.section-somos2__h2{
+    display: none;
+    font-size: 1.5em;
+    color: #EB714B;
+    padding: 40px;
+    border: solid #EB714B 2px;
+    border-radius: 5px;
 }
 .section-somos2__p{
+    padding:20px;
     font-size: 1em;
     background-color: #EB714B;
+    border-radius: 10px;
     height:350px ;
     width:50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.section-somos2 p{
+    margin-bottom: 0;
 }
 /* SIGUIENTE PAGINA:     TRABAJOS//////////////////////////// */
 
@@ -889,6 +929,9 @@ text-align: center;
     .header__barra__a {
         color: #E7E8EC;
     }
+    .section-somos2{
+        font-size: 0.9em;
+    }
 }
 @media only screen and (max-width: 822px){
   
@@ -923,8 +966,34 @@ text-align: center;
         margin-top: 60px;
         width: 100%;
     }
+    .somos{
+        height: 1200px;
+    }
+   .section-somos{
+       font-size: 1.3em ;
+       height: 600px;
+       flex-direction: column;
+   }
+   .section-somos__titulo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+}
 
-   
+    .section-somos2{
+        font-size: 0.8em;
+        flex-direction: column-reverse;
+        height: 600px;
+        align-items: center;
+    }
+    .section-somos2__p{
+        height: 450px;
+    }
+
+
+    
 
 }
 @media only screen and (max-width: 576px){
@@ -945,9 +1014,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
 }
-.bi-arrow-down-circle-fill{
-    font-size: 2em;
-}
+
 .galeria__img__servicios{
     flex-direction: column;
 }
@@ -995,22 +1062,31 @@ body{
 }
 /* ///////////QUIENES SOMOS////////// */
 
-.section-somos, .section-somos2{
-    width: 100%;
-    justify-content: center;
-    
+
+.logo__somos{
+    width: 200px;
+    height: 200px;
 }
 .section-somos__titulo{
-    flex-direction: column;
-    justify-content: center;
 
+   width: 70%;
+   height: 300px;
+}
+.section-somos2{
+    margin-top: -50px;
+    justify-content: center;
 }
 .section-somos2__p{
-    padding: 50px;
-    font-weight: 600;
-
-background-color: #EB714B;
+    width: 70%;
 }
+.section-somos2__svg{
+    display: none;
+}
+.section-somos2__h2{
+    display: block;
+    order: 2;
+}
+
 /* //////////TRABAJOS/////// */
 .trabajos__section{
     height: 800px;
@@ -1050,5 +1126,3 @@ margin: 10px;
 padding: 20px;
 }
 /* /////////CONTACTANOS//// */
-
-}
