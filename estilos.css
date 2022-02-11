@@ -37,16 +37,13 @@ header{
 }
 .header__logo:hover{
 animation-name:giro;
-animation-iteration-count: 1    ;
+animation-iteration-count: 1 ;
 animation-timing-function: ease-in;
 animation-duration: .5s;
 animation-delay: 0.3s;
 animation-direction:reverse;
 }
 
-.a__logo{
-    height: 50px;
-}
 .button{
     color: #E7E8EC;
 }
@@ -106,7 +103,7 @@ display: flex;
 align-items: center;
 justify-content: flex-end;
  }
- .header__nav {
+ .header__barra{
 width: 100%;
  }
  
@@ -151,7 +148,7 @@ align-items: center;
     color: #EB714B
 }
 
-.h1__index{
+.header__h1{
     display:inline-block;
 
     /* background-color: #ECECEC; */
@@ -192,7 +189,7 @@ align-items: center;
        transform:translateY(0)
    }
 } */
-.h1__index__p{
+.header__h1__p{
     color: #E7E8EC;
     font-size: .47em;
     text-align: center;
@@ -203,12 +200,12 @@ align-items: center;
     color: #EB714B
 }
 
-.encabezado__h2{
+.encabezado__contenedor__h2{
     color: #EB714B;
     font-size: 2.1875em;
     font-weight: 600;
 }
-.encabezado__h4{
+.encabezado__contenedor__h4{
     color: #ECECEC;
     font-weight: 600;
     font-size: 1.25rem;
@@ -222,7 +219,7 @@ align-items: center;
     align-items: center;
     text-align: center;
 }
-.encabezado__p{
+.encabezado__contenedor__p{
     color: #E7E8EC;
     text-align:center;
     margin-top:10px;
@@ -235,9 +232,7 @@ justify-content: center;
 align-items: center;
 text-align: center; */
 
-/* .main{
-    grid-area: main;
-} */
+
 .servicio{
     width: 100%;
     height: 600px;
@@ -252,13 +247,13 @@ text-align: center; */
     align-items: center;
     flex-direction: column;
 }
-.servicio__h3{
+.servicio__titulo__h3{
     text-align:start;
     color: #EB714B;
     font-weight: 600;
     font-size: 2.1875rem;
 }
-.servicio__p{
+.servicio__titulo__p{
     color: #E7E8EC;
     font-size:1.25em;
     font-weight: 600;
@@ -353,12 +348,12 @@ text-align: center; */
     justify-content: center;
     align-items: center;
 }
-.calidad__h3{
+.calidad__titulo__h3{
     color: #EB714B;
     font-size: 2.1875em;
     font-weight: 600;
 }
-.calidad__h3__p{
+.calidad__titulo__p{
 
     color: #ECECEC;
     font-size:1.25em;
@@ -371,7 +366,7 @@ text-align: center; */
     justify-content: center;
     align-items: center;
 }
-.calidad__a{
+.boton__calidad__a{
     font-size: 1em;
     color: #ECECEC ;
     text-decoration: none;
@@ -399,13 +394,13 @@ a{
     justify-content: center;
 
 }
-.h3__garantia{
+.garantia__titulo__h3{
     font-size: 2.1875em;
     color: #EB714B;
     font-weight: 600;
     text-align: center;
 }
-.h3__garantia__p{
+.garantia__titulo__p{
     text-align: center;
     color: #ECECEC;
     font-size: 1.25em;
@@ -494,7 +489,7 @@ transform: translateY(35px);
    box-shadow: 15px 10px 30px #000; 
 
 }
-.footer__redes{
+.footer__1__redes{
     height: 200px;
     width: 50%;
     display: flex;
@@ -503,11 +498,11 @@ transform: translateY(35px);
     align-items: center;
     
 }
-.footer__redes a{
+.footer__1__redes a{
     font-size: 1em;
     color: #EB714B;
 }
-.footer__contacto{
+.footer__1__contacto{
     width: 50%;
    height: 200px;
    display: flex;
@@ -515,16 +510,16 @@ transform: translateY(35px);
    justify-content: space-around;
    align-items: center;
 }
-.footer__contacto p{
+.footer__1__contacto p{
 font-size: 1em;
     color: #EB714B;
 }
-.h2__redes{
+.footer__1__redes__h2{
     font-size: 1.5em;
     font-weight: 400;
     color: #ECECEC;
 }
-.h2__contacto__footer {
+.footer__1__contacto__h2 {
     font-size: 1.5em;
     font-weight: 400;
     color: #ECECEC; 
@@ -583,7 +578,7 @@ font-size: 1em;
 }
  /*  ///////////////   SIGUIENTE PAGINA:    QUIENES SOMOS?/////////////////////////////////////////////////*/
 
-.logo__somos{
+.somos__section__titulo__logo{
     width: 250px;
     object-fit: contain;
 }
@@ -592,7 +587,7 @@ font-size: 1em;
     width: 100%;
     height: 800px;
 }
-.section-somos{
+.somos__section{
 margin-top: 50px;
     width: 100%;
     height: 400px;
@@ -601,13 +596,13 @@ margin-top: 50px;
     align-items: center;
     margin-bottom: 50px;
 }
-.section-somos__svg{
+.somos__section__svg{
     height: 200px;
     margin: auto;
     
 
 }
-.section-somos__svg:hover{
+.somos__section__svg:hover{
 
     animation-name: balanceo;
     animation-duration: 2s;
@@ -625,12 +620,12 @@ transform: rotate(10deg);
     }
     
 }
-.section-somos2__svg{
+.somos__section__2__svg{
     height: 200px;
     margin: auto;
     
 }
-.section-somos__titulo{
+.somos__section__titulo{
 
     background-color: #EB714B;
     height:350px ;
@@ -641,13 +636,13 @@ transform: rotate(10deg);
     align-items: center;
     
 }
-.section-somos2{
+.somos__section__2{
     height: 400px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
-.section-somos2__h2{
+.somos__section__2__h2{
     display: none;
     font-size: 1.5em;
     color: #EB714B;
@@ -655,7 +650,7 @@ transform: rotate(10deg);
     border: solid #EB714B 2px;
     border-radius: 5px;
 }
-.section-somos2__p{
+.somos__section__2__p{
     padding:20px;
     font-size: 1em;
     background-color: #EB714B;
@@ -666,7 +661,7 @@ transform: rotate(10deg);
     justify-content: center;
     align-items: center;
 }
-.section-somos2 p{
+.somos__section__2 p{
     margin-bottom: 0;
 }
 /* SIGUIENTE PAGINA:     TRABAJOS//////////////////////////// */
@@ -923,13 +918,13 @@ text-align: center;
         height:115px;
 
     }
-    .header__nav{
+    .header__barra{
         background-color: #1C2641;
     }
     .header__barra__a {
         color: #E7E8EC;
     }
-    .section-somos2{
+    .somos__section__2{
         font-size: 0.9em;
     }
 }
@@ -969,12 +964,12 @@ text-align: center;
     .somos{
         height: 1200px;
     }
-   .section-somos{
+   .somos__section{
        font-size: 1.3em ;
        height: 600px;
        flex-direction: column;
    }
-   .section-somos__titulo{
+   .somos__section__titulo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -982,7 +977,7 @@ text-align: center;
     font-size: 1.2em;
 }
 
-    .section-somos2{
+    .somos__section__2{
         font-size: 0.8em;
         flex-direction: column-reverse;
         height: 600px;
@@ -1054,35 +1049,35 @@ body{
     flex-direction: column;
     height: 400px;
 }
-.footer__redes{
+.footer__1__redes{
     width: 100%;
 }
-.footer__contacto{
+.footer__1__contacto{
     width: 100%;
 }
 /* ///////////QUIENES SOMOS////////// */
 
 
-.logo__somos{
+.somos__section__titulo__logo{
     width: 200px;
     height: 200px;
 }
-.section-somos__titulo{
+.somos__section__titulo{
 
    width: 70%;
    height: 300px;
 }
-.section-somos2{
+.somos__section__2{
     margin-top: -50px;
     justify-content: center;
 }
-.section-somos2__p{
+.somos__section__2__p{
     width: 70%;
 }
-.section-somos2__svg{
+.somos__section__2__svg{
     display: none;
 }
-.section-somos2__h2{
+.somos__section__2__h2{
     display: block;
     order: 2;
 }
@@ -1125,4 +1120,5 @@ body{
 margin: 10px;
 padding: 20px;
 }
-/* /////////CONTACTANOS//// */
+}
+/* /////////CONTACTANOS//// *

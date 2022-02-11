@@ -1,0 +1,106 @@
+.footer{
+    margin-top: 80px;
+    width: 100%;
+    height:300px;
+    
+    &__1{
+        width: 100%;
+        height:200px;
+        display: flex;
+       flex-direction: row;
+       align-items: center;
+       box-shadow: 15px 10px 30px #000;
+       
+       &__redes{
+        height: 200px;
+        width: 50%;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        
+        a{
+            font-size: 1em;
+            color: $colorResalta;
+        }
+        &__h2{
+            font-size: 1.5em;
+            font-weight: 400;
+             color: $colorSubtitulo;
+        }
+
+       }
+       &__contacto{
+        width: 50%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        &__h2{
+            font-size: 1.5em;
+            font-weight: 400;
+            color: $colorSubtitulo; 
+        }
+        
+        p{
+            font-size: 1em;
+            color: $colorResalta;
+        }
+       }
+    }
+
+    &__2{
+        margin-top: 20px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        p{
+            font-size: 1em;
+            color:$colorSubtitulo;
+        }
+        &__jujuy{
+            animation-name: entrar;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+        }
+        &__fabri{
+            animation-name: entrar2;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+        }
+    }
+
+}
+@keyframes entrar {
+    0%{
+    transform: translateX(-600px)
+    }
+    50%{
+        transform: translateX(50px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
+
+@keyframes entrar2 {
+    0%{
+    transform: translateX(600px)
+    }
+    50%{
+        transform: translateX(-50px)
+    }
+    100%{
+        transform: translateX(0)
+    }
+}
