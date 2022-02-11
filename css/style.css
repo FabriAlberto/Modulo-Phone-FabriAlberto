@@ -29,6 +29,10 @@ body {
   100% {
     transform: translateY(0); } }
 
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 14px; } }
+
 .header {
   background-image: url(../../imagenes/header.jpg);
   background-repeat: no-repeat;
@@ -244,6 +248,15 @@ body {
     transform: translateX(-50px); }
   100% {
     transform: translateX(0); } }
+
+@media only screen and (max-width: 576px) {
+  .footer__1 {
+    flex-direction: column;
+    height: 400px; }
+    .footer__1__redes {
+      width: 100%; }
+    .footer__1__contacto {
+      width: 100%; } }
 
 .somos {
   background-color: #1C2641;
