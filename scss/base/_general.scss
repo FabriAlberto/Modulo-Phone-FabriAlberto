@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     background-color: $colorPrincipal;
@@ -9,16 +11,17 @@ body{
 .html{
     scroll-behavior: smooth;
 }
+
 .bi-arrow-up-circle-fill{
-    color: #6B6C72;
     position: absolute;
+color: #6B6C72;
 font-size: 3em;
 margin-left: 40px;
-margin-top: px;
+margin-top: -30px;
 animation-name: flecha2;
 animation-timing-function: ease-in;
 animation-duration: 1s;
-animation-iteration-count: 11;
+animation-iteration-count: infinite;
 animation-direction: alternate-reverse;
 
  }

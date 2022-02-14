@@ -1,16 +1,18 @@
 .somos{
     background-color: $colorPrincipal;
     width: 100%;
-    height: 800px;
+    height: 1200px;
+    
+
+
 
     &__section{
     margin-top: 50px;
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 50px;
 
     &__svg{
         height: 200px;
@@ -38,24 +40,46 @@
         }
     }
     }
+
+    &__section1{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__h2{
+            height: 200px;
+            width: 70%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: $tamanoTitulos;
+            color: $colorResalta;
+            border: solid  $colorResalta 2px;
+            border-radius: 5px;
+
+            &:hover{
+                background-color: $colorResalta;
+                color: $colorPrincipal;
+                border: none ;
+            }
+        }
+
+        
+
+    }
     &__section__2{
-        height: 400px;
+        height: 450px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
 
         &__svg{
             height: 200px;
             margin: auto;        
         }
-        &__h2{
-            display: none;
-            font-size: 1.5em;
-            color: $colorResalta;
-            padding: 40px;
-            border: solid  $colorResalta 2px;
-            border-radius: 5px; 
-        }
+
         &__p{
             padding:20px;
             font-size: 1em;
@@ -95,7 +119,7 @@ transform: rotate(10deg);
 }
 @media only screen and (max-width: 822px){
     .somos{
-        height: 1200px;
+        height: 1500px;
 
         &__section{
             font-size: 1.3em ;
@@ -110,6 +134,8 @@ transform: rotate(10deg);
                 font-size: 1.2em;
             }
         }
+
+
         &__section__2{
             font-size: 0.8em;
             flex-direction: column-reverse;
@@ -120,6 +146,7 @@ transform: rotate(10deg);
                 height: 450px;
             }
         }
+        
     }
 }
 @media only screen and (max-width: 576px){
@@ -134,8 +161,10 @@ transform: rotate(10deg);
             height: 200px;
         }
     }
+    .somos__section1__h2{
+            font-size: 1.7em;
+    }
     .somos__section__2{
-        margin-top: -50px;
         justify-content: center;
         &__p{
             width: 70%;

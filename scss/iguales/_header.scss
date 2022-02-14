@@ -12,6 +12,7 @@
         height: 50px;
         width: 50px;
         object-fit: cover;
+        margin-right: 10px;
 
         &:hover{
             animation-name:giro;
@@ -24,11 +25,21 @@
         }
     }
     &__flecha{
-        height: 40vh;
+    height: 40vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+
+        &__boton{
+            color:#6B6C72;
+            animation-name: flecha0;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+            animation-iteration-count: infinite ;
+            animation-direction: alternate;
+
+        }
     }
     &__barra{
         width: 100%;
@@ -37,14 +48,14 @@
             justify-content:space-around;
             background-color:none;
             &__a{
-                width: 20%;
+                width: 25%;
                  display: flex;
               align-items: center;
-                justify-content: flex-end;
+                justify-content: center;
             }
         }
         &__as{
-            width: 80%;
+            width: 75%;
             display: flex;
             justify-content: center;
         }
@@ -62,7 +73,7 @@
     &__h1__index{
         display:inline-block;
         margin-top: 160px;
-        font-size: $tamanoTitulos;
+        font-size: $tamanoH1;
         font-weight: 600;
         border-radius: 5px;
         color: $colorPrincipal;
@@ -84,13 +95,7 @@
 }
 .bi-arrow-down-circle-fill{
     font-size: 3.5em;
-    color:#6B6C72;
-    margin-right: 50px;
-    animation-name: flecha;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-iteration-count: 11;
-    animation-direction: alternate;
+ 
 }
 .navbar-nav{
     width: 100%;
@@ -134,7 +139,7 @@
         transform: rotate(360deg);
     }
 }
-@keyframes flecha {
+@keyframes flecha0 {
     0%{
 transform: translateY(-35px);
     }
@@ -164,12 +169,7 @@ transform: translateY(-35px);
 
 
 }
-@media only screen and (max-width: 822px){
-  
-    .bi-arrow-down-circle-fill{
-        margin-left: 50px;
-    }
-}
+
 @media only screen and (max-width: 576px){
     .header__flecha{
         height: 40vh;
