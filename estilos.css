@@ -196,9 +196,9 @@ align-items: center;
 }
 
 /* MAIN///////////// */
-.inicio, .quienessomos, .celulares, .trabajos, .contactanos{
+/* .inicio, .quienessomos, .celulares, .trabajos, .contactanos{
     color: #EB714B
-}
+} */
 
 .encabezado__contenedor__h2{
     color: #EB714B;
@@ -259,7 +259,7 @@ text-align: center; */
     font-weight: 600;
 }
 
-.galeria__img__servicios{
+.servicio__galeria{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -279,7 +279,7 @@ text-align: center; */
     box-shadow: 10px 15px 30px #000;
     text-align: center;
 } */
-.servicio__img{
+.servicio__galeria__img{
     display: inline-block;
     object-fit:contain;
     width: 300px;
@@ -298,19 +298,12 @@ text-align: center; */
     width: 155.84px;
     
 }
-.servicio__img1__parrafo, .servicio__img2__parrafo, .servicio__img3__parrafo{
+.servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo{
     color: #E7E8EC;
     margin-top: 10px;
     font-size: 1em;
 }
-.servicio__img3__a{
-    display: inline-block;
-    color: #ECECEC;
-    background-color: #1C2641;
-    margin-top: 10px;
-    padding: 4px;
-    border-radius: 5px;
-}
+
 
 
 .calidad{
@@ -359,14 +352,14 @@ text-align: center; */
     font-size:1.25em;
     font-weight: 600;
 }
-.boton__calidad{
+.calidad__boton{
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.boton__calidad__a{
+.calidad__boton__a{
     font-size: 1em;
     color: #ECECEC ;
     text-decoration: none;
@@ -406,7 +399,7 @@ a{
     font-size: 1.25em;
     font-weight: 600;
 }
-.carrusel-fotos__garantia{
+.garantia__carrusel{
     margin-top: 50px;
     width: 100%;
     height: 350px;
@@ -430,7 +423,7 @@ object-fit: contain;
     text-align: center;
 }
 
-.boton__vermas__a{
+.garantia__boton__vermas__a{
     margin-top: 80px;
     text-decoration: none;
     text-align:center;
@@ -441,7 +434,7 @@ object-fit: contain;
     color: #ECECEC;
     border-radius: 20px;
 }
-.boton__vermas{
+.garantia__boton__vermas{
    height: 100px;
    width: 100%;
    display: flex;
