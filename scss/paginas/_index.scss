@@ -1,11 +1,9 @@
 .encabezado{
     width: 100%;
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-columnCenter;
     text-align: center;
+    
     &__contenedor{
         &__h2{
             color: $colorResalta;
@@ -33,10 +31,7 @@
     &__titulo{
         width: 50%;
         height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+       @extend %flex-columnCenter;
         &__h3{
             text-align:start;
            color:$colorResalta;
@@ -144,10 +139,7 @@
     &__titulo{
         width: 100%;
         height: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+       @extend %flex-columnCenter;
 
         &__h3{
             font-size: $tamanoTitulos;
@@ -206,12 +198,12 @@
         }
     }
 }
-@media only screen and (max-width: 991px){
+@include mediaquerydesktop{
     .somos__section__2{
         font-size: 0.9em;
     }
 }
-@media only screen and (max-width: 822px){
+@include mediaquerytablet{
 
     .servicio{
         height: 1600px;
@@ -224,7 +216,7 @@
         }
     }
 }
-@media only screen and (max-width: 576px){
+@include mediaquerymobile{
     .servicio{
         height: 1500px;
         &__galeria{

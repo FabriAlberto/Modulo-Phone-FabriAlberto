@@ -59,8 +59,8 @@
             border-radius: 5px;
 
             &:hover{
-                background-color: $colorResalta;
-                color: $colorPrincipal;
+                background-color: map-get($hovers, primario );
+                color: map-get($hovers , terciario );
                 border: none ;
             }
         }
@@ -112,12 +112,12 @@ transform: rotate(10deg);
     
 }
 
-@media only screen and (max-width: 991px){
+@include mediaquerydesktop{
 .somos__section__2{
     font-size: 0.9em;
 }
 }
-@media only screen and (max-width: 822px){
+@include mediaquerytablet{
     .somos{
         height: 1500px;
 
@@ -149,7 +149,7 @@ transform: rotate(10deg);
         
     }
 }
-@media only screen and (max-width: 576px){
+@include mediaquerymobile{
    
 
     .somos__section__titulo{

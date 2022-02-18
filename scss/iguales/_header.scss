@@ -36,7 +36,7 @@
             animation-name: flecha0;
             animation-timing-function: ease-in;
             animation-duration: 1s;
-            animation-iteration-count: infinite ;
+            animation-iteration-count: infinite;
             animation-direction: alternate;
 
         }
@@ -109,13 +109,13 @@
         font-size: 1.6em;
 }
 .navbar-dark .navbar-brand:hover{
-        color: #a84629;
+        color: map-get($hovers, secundario );
 }
 .navbar-dark .navbar-nav .nav-link.active{
         color: $colorPrincipal;
 }
  .navbar-dark .navbar-nav .nav-link.active:hover{
-        color: $colorResalta;
+        color: map-get($hovers , primario )
 }
 
 
@@ -148,7 +148,7 @@ transform: translateY(-35px);
     }
     
 }
-@media only screen and (max-width: 991px){
+@include mediaquerys (991px){
     .header__barra{
         background-color: #1C2641;
 
@@ -170,7 +170,7 @@ transform: translateY(-35px);
 
 }
 
-@media only screen and (max-width: 576px){
+@include mediaquerys (576px){
     .header__flecha{
         height: 40vh;
         width: 100%;

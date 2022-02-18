@@ -5,3 +5,41 @@ $colorSubtitulo:#E7E8EC;
 
 $tamanoH1:2.8125em;
 $tamanoTitulos:2.1875em;
+
+$hovers: (
+   primario: #EB714B,
+   secundario:  darken( #EB714B, 20),
+   terciario:  #1C2641
+);
+    
+%flex-columnCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+@mixin mediaquerydesktop{
+    @media only screen and (max-width:991px){
+        @content;
+    }
+}
+@mixin mediaquerytablet{
+    @media only screen and (max-width:822px){
+        @content;
+    }
+}
+
+@mixin mediaquerymobile{
+    @media only screen and (max-width:576px){
+        @content;
+    }
+}
+
+@mixin mediaquerys ($pixels){
+    @media only screen and (max-width:$pixels){
+        @content;
+    }
+}
+
+
