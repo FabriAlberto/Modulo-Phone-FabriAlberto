@@ -29,7 +29,7 @@
     height: 600px;
     background-color: $colorPrincipal;
     &__titulo{
-        width: 50%;
+        width: 100%;
         height: 150px;
        @extend %flex-columnCenter;
         &__h3{
@@ -54,19 +54,23 @@
         &__img{
             display: inline-block;
             object-fit:contain;
-            width: 300px;
+            width: 350px;
             height: 400px;
-            margin: 60px;
+            margin: 30px;
             background-color: $colorResalta;
             padding: 20px;
-            
-            box-shadow: 10px 15px 30px #000;
             text-align: center;
+
+            &:hover{
+                transform: scale(1.08);
+
+            }
             
         }
         &__img1__parrafo, &__img2__parrafo, &__img3__parrafo{
+            text-align: left;
             color: $colorSubtitulo;
-            margin-top: 10px;
+            margin-top: 30px;
             font-size: 1em;
 
         }
@@ -102,6 +106,20 @@
             color: $colorSubtitulo;
             font-size:1.25em;
             font-weight: 600;
+        }
+        &__botonYoutube {
+               &:hover{
+                   color: $colorSubtitulo;
+               }
+
+            i{
+               &:hover{
+                    color: $colorResalta;
+               }
+            }
+            margin-top: 150px;
+            color: $colorSubtitulo;
+            font-size: 2em;
         }
     }
     &__video{
@@ -206,32 +224,12 @@
 @include mediaquerytablet{
 
     .servicio{
-        height: 1600px;
+        height: 1400px;
         &__galeria{
             flex-direction: column;
-            
             &__img1__parrafo, &__img2__parrafo, &__img3__parrafo{
                 font-size: 1em;
             }
-        }
-    }
-}
-@include mediaquerymobile{
-    .servicio{
-        height: 1500px;
-        &__galeria{
-            flex-direction: column;
-
-            &__img1__parrafo, &__img2__parrafo, &__img3__parrafo{
-
-                color: $colorSubtitulo;
-                margin-top: 30px;
-                font-size: 1em;
-            }
-        }
-
-        &__titulo{
-            width: 100%;
         }
     }
     .calidad{
@@ -244,9 +242,31 @@
             height: 60px;
             margin-top: 100px;
             order: -1;
+
+            &__botonYoutube{
+                display: none;
+            }
         }
         &__video{
             width: 100%;
         }
     }
+}
+@include mediaquerymobile{
+    .servicio{
+        &__galeria{
+            &__img{
+                width: 300px;
+            }
+            &__img1__parrafo, &__img2__parrafo, &__img3__parrafo{
+
+                margin-top: 30px;
+            }
+        }
+        &__titulo{
+            width: 100%;
+        }
+    }
+    
+    
 }

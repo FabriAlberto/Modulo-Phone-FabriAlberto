@@ -20,8 +20,11 @@
         align-items: center;
         
         a{
-            font-size: 1em;
-            color: $colorResalta;
+            font-size: 2.1em;
+            color: darken($colorSubtitulo, 20 );
+            &:hover{
+                color: $colorResalta
+            }
         }
         &__h2{
             font-size: 1.5em;
@@ -45,8 +48,23 @@
         }
         
         p{
+            .fab{
+                font-size: 2.1em;
+                &:hover{
+                    color: $colorResalta;
+                }
+            }
             font-size: 1em;
-            color: $colorResalta;
+            .fas{
+                font-size: 2.1em;
+                &:hover{
+                    color: $colorResalta;
+                }
+            }
+            color: darken($colorSubtitulo, 20 );
+        }
+        &__p{
+            margin-left: -140px;
         }
        }
     }
@@ -115,6 +133,11 @@
         }
         &__contacto{
             width: 100%;
+
+            &__p{
+                margin-left:0;
+            }
+        
         }
     }
 

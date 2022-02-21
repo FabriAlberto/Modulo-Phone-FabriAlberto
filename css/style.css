@@ -9,7 +9,7 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif; }
 
-.a {
+a {
   text-decoration: none; }
 
 body {
@@ -132,7 +132,9 @@ body {
   color: #1C2641; }
 
 .navbar-dark .navbar-nav .nav-link.active:hover {
-  color: #EB714B; }
+  color: #EB714B;
+  border-bottom: solid #1C2641 1px;
+  padding-bottom: 5px; }
 
 @keyframes giro {
   0% {
@@ -194,8 +196,10 @@ body {
       justify-content: space-around;
       align-items: center; }
       .footer__1__redes a {
-        font-size: 1em;
-        color: #EB714B; }
+        font-size: 2.1em;
+        color: #aeb1bf; }
+        .footer__1__redes a:hover {
+          color: #EB714B; }
       .footer__1__redes__h2 {
         font-size: 1.5em;
         font-weight: 400;
@@ -213,7 +217,17 @@ body {
         color: #E7E8EC; }
       .footer__1__contacto p {
         font-size: 1em;
-        color: #EB714B; }
+        color: #aeb1bf; }
+        .footer__1__contacto p .fab {
+          font-size: 2.1em; }
+          .footer__1__contacto p .fab:hover {
+            color: #EB714B; }
+        .footer__1__contacto p .fas {
+          font-size: 2.1em; }
+          .footer__1__contacto p .fas:hover {
+            color: #EB714B; }
+      .footer__1__contacto__p {
+        margin-left: -140px; }
   .footer__2 {
     margin-top: 20px;
     width: 100%;
@@ -261,7 +275,9 @@ body {
     .footer__1__redes {
       width: 100%; }
     .footer__1__contacto {
-      width: 100%; } }
+      width: 100%; }
+      .footer__1__contacto__p {
+        margin-left: 0; } }
 
 .encabezado {
   width: 100%;
@@ -285,7 +301,7 @@ body {
   height: 600px;
   background-color: #1C2641; }
   .servicio__titulo {
-    width: 50%;
+    width: 100%;
     height: 150px; }
     .servicio__titulo__h3 {
       text-align: start;
@@ -304,16 +320,18 @@ body {
     .servicio__galeria__img {
       display: inline-block;
       object-fit: contain;
-      width: 300px;
+      width: 350px;
       height: 400px;
-      margin: 60px;
+      margin: 30px;
       background-color: #EB714B;
       padding: 20px;
-      box-shadow: 10px 15px 30px #000;
       text-align: center; }
+      .servicio__galeria__img:hover {
+        transform: scale(1.08); }
     .servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo {
+      text-align: left;
       color: #E7E8EC;
-      margin-top: 10px;
+      margin-top: 30px;
       font-size: 1em; }
   .servicio img {
     height: 200px;
@@ -343,6 +361,14 @@ body {
       color: #E7E8EC;
       font-size: 1.25em;
       font-weight: 600; }
+    .calidad__titulo__botonYoutube {
+      margin-top: 150px;
+      color: #E7E8EC;
+      font-size: 2em; }
+      .calidad__titulo__botonYoutube:hover {
+        color: #E7E8EC; }
+      .calidad__titulo__botonYoutube i:hover {
+        color: #EB714B; }
   .calidad__video {
     display: flex;
     width: 50%;
@@ -423,23 +449,11 @@ body {
 
 @media only screen and (max-width: 822px) {
   .servicio {
-    height: 1600px; }
+    height: 1400px; }
     .servicio__galeria {
       flex-direction: column; }
       .servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo {
-        font-size: 1em; } }
-
-@media only screen and (max-width: 576px) {
-  .servicio {
-    height: 1500px; }
-    .servicio__galeria {
-      flex-direction: column; }
-      .servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo {
-        color: #E7E8EC;
-        margin-top: 30px;
         font-size: 1em; }
-    .servicio__titulo {
-      width: 100%; }
   .calidad {
     height: 800px;
     display: flex;
@@ -449,8 +463,18 @@ body {
       height: 60px;
       margin-top: 100px;
       order: -1; }
+      .calidad__titulo__botonYoutube {
+        display: none; }
     .calidad__video {
       width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  .servicio__galeria__img {
+    width: 300px; }
+  .servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo {
+    margin-top: 30px; }
+  .servicio__titulo {
+    width: 100%; } }
 
 .somos {
   background-color: #1C2641;
