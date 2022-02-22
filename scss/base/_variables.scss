@@ -11,10 +11,16 @@ $hovers: (
    secundario:  darken( #EB714B, 20),
    terciario:  #1C2641
 );
-
-%hoverfuego{
+%botonFuego{
     color: $colorSubtitulo;
     background: linear-gradient(90deg, rgba(235,113,75,1) 0%, rgba(217,29,0,0.639093137254902) 99%);
+}
+$colorFuego:linear-gradient(90deg, rgba(235,113,75,1) 0%, rgba(217,29,0,0.639093137254902) 99%);
+
+%hoverNeon{
+    box-shadow: 0 0 10px #EB714B, 0 0 30px #EB714B, 0 0 60px #EB714B;
+    transition-delay: .3s;
+
 }
 
 %flex-columnCenter{

@@ -26,17 +26,25 @@
         }
     }
     &__titulo{
-        background-color: $colorResalta;
+        
         height:350px ;
         width: 50%;
         border-radius: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        
 
         &__logo{
-             width: 250px;
-            object-fit: contain;
+            width: 250px;
+        }
+
+        &__h3{
+            color: $colorSubtitulo;
+            margin-top: 10px;
+            font-weight: 400px;
+            border-bottom:solid $colorResalta 1.8px;
+            
         }
     }
     }
@@ -48,7 +56,7 @@
         align-items: center;
         justify-content: center;
         &__h2{
-            height: 200px;
+            height: 160px;
             width: 70%;
             display:flex;
             align-items: center;
@@ -59,9 +67,8 @@
             border-radius: 5px;
 
             &:hover{
-                background-color: map-get($hovers, primario );
-                color: map-get($hovers , terciario );
-                border: none ;
+            
+                @extend %botonFuego;
             }
         }
 
@@ -74,6 +81,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        flex-direction: column-reverse;
 
         &__svg{
             height: 200px;
@@ -81,15 +89,17 @@
         }
 
         &__p{
+            color: $colorSubtitulo;
             padding:20px;
             font-size: 1em;
-            background-color: $colorResalta;
             border-radius: 10px;
             height:350px ;
             width:50%;
             display: flex;
             justify-content: center;
             align-items: center;
+            border-left: solid $colorResalta 1.8px;
+            border-right: solid $colorResalta 1.8px;
         }
         p{
             margin-bottom: 0;

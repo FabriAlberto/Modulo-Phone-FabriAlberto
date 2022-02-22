@@ -18,7 +18,8 @@
         &__p{
             color: $colorSubtitulo;
             text-align:center;
-            margin-top:10px;
+            margin-top:20px;
+            padding: 0px 250px 0px 250px;
         }
     }
     
@@ -153,15 +154,58 @@
         font-size: 1em;
         color: $colorSubtitulo ;
         text-decoration: none;
-        background-color: $colorResalta;
+        @extend %botonFuego;
         padding:10px;
-        border-radius: 20px;
+        transition: .5s;
+        
 
         &:hover{
-            @extend %hoverfuego;
+            color: $colorSubtitulo;
+            @extend %hoverNeon;
+            
+            
         }
        }
     }
+}
+
+.banner{
+   height: 150px;
+   width: 100%;
+   border: solid $colorResalta 1px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   background-color: darken($colorPrincipal, 5);
+   margin-top: 30px;
+
+   &__horario{
+     width: 50%;
+     color: $colorResalta;
+     @extend %flex-columnCenter;
+
+     &__reloj{
+         font-size: 25px;
+         color: $colorSubtitulo;
+         margin-bottom: 10px;
+     }
+
+   }
+   &__ubicacion{
+       width: 50%;
+       color: $colorResalta;
+      
+       @extend %flex-columnCenter;
+
+       &__mapa{
+           font-size: 25px;
+           color: $colorSubtitulo;
+           margin-bottom: 10px;
+       }
+       
+   }
+
 }
 .garantia{
     width: 100%;
@@ -224,19 +268,24 @@
             margin-top: 80px;
             text-decoration: none;
             text-align:center;
-            background-color: $colorResalta;
+            @extend %botonFuego;
             padding: 10px;
             font-size: 1em;
             color: $colorSubtitulo;
-            border-radius: 20px;
+            transition: .5s;
 
             &:hover{
-                @extend %hoverfuego;
+                color: $colorSubtitulo;
+                 @extend %hoverNeon;
+                
             }
         }
     }
 }
 @include mediaquerydesktop{
+    .encabezado__contenedor__p{
+        padding: 0;
+    }
     .somos__section__2{
         font-size: 0.9em;
     }
@@ -273,6 +322,7 @@
     }
 }
 @include mediaquerymobile{
+    
     .servicio{
         &__galeria{
             &__img{
@@ -288,5 +338,8 @@
         }
     }
     
-    
+    .banner{
+        height: 300px;
+        flex-direction: column;
+    }
 }

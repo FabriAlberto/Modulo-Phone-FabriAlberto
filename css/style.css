@@ -1,8 +1,12 @@
-.calidad__boton__a:hover, .garantia__boton__vermas__a:hover {
+.calidad__boton__a, .garantia__boton__vermas__a, .somos__section1__h2:hover {
   color: #E7E8EC;
   background: linear-gradient(90deg, #eb714b 0%, rgba(217, 29, 0, 0.639093) 99%); }
 
-.encabezado, .servicio__titulo, .garantia__titulo, .trabajos__servicios, .trabajos__img, .contacto__direccion, .contacto__ubicacion, .formularios__contenedor-2 {
+.calidad__boton__a:hover, .garantia__boton__vermas__a:hover {
+  box-shadow: 0 0 10px #EB714B, 0 0 30px #EB714B, 0 0 60px #EB714B;
+  transition-delay: .3s; }
+
+.encabezado, .servicio__titulo, .banner__horario, .banner__ubicacion, .garantia__titulo, .trabajos__servicios, .trabajos__img, .reparaciones__img__contenedor__antes, .reparaciones__img__contenedor__despues, .contacto__direccion, .contacto__ubicacion, .formularios__contenedor-2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,7 +303,8 @@ body {
   .encabezado__contenedor__p {
     color: #E7E8EC;
     text-align: center;
-    margin-top: 10px; }
+    margin-top: 20px;
+    padding: 0px 250px 0px 250px; }
 
 .servicio {
   width: 100%;
@@ -400,9 +405,35 @@ body {
       font-size: 1em;
       color: #E7E8EC;
       text-decoration: none;
-      background-color: #EB714B;
       padding: 10px;
-      border-radius: 20px; }
+      transition: .5s; }
+      .calidad__boton__a:hover {
+        color: #E7E8EC; }
+
+.banner {
+  height: 150px;
+  width: 100%;
+  border: solid #EB714B 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #141c2f;
+  margin-top: 30px; }
+  .banner__horario {
+    width: 50%;
+    color: #EB714B; }
+    .banner__horario__reloj {
+      font-size: 25px;
+      color: #E7E8EC;
+      margin-bottom: 10px; }
+  .banner__ubicacion {
+    width: 50%;
+    color: #EB714B; }
+    .banner__ubicacion__mapa {
+      font-size: 25px;
+      color: #E7E8EC;
+      margin-bottom: 10px; }
 
 .garantia {
   width: 100%;
@@ -452,13 +483,16 @@ body {
       margin-top: 80px;
       text-decoration: none;
       text-align: center;
-      background-color: #EB714B;
       padding: 10px;
       font-size: 1em;
       color: #E7E8EC;
-      border-radius: 20px; }
+      transition: .5s; }
+      .garantia__boton__vermas__a:hover {
+        color: #E7E8EC; }
 
 @media only screen and (max-width: 991px) {
+  .encabezado__contenedor__p {
+    padding: 0; }
   .somos__section__2 {
     font-size: 0.9em; } }
 
@@ -489,7 +523,10 @@ body {
   .servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo {
     margin-top: 30px; }
   .servicio__titulo {
-    width: 100%; } }
+    width: 100%; }
+  .banner {
+    height: 300px;
+    flex-direction: column; } }
 
 .somos {
   background-color: #1C2641;
@@ -511,16 +548,19 @@ body {
         animation-iteration-count: infinite;
         animation-direction: alternate; }
     .somos__section__titulo {
-      background-color: #EB714B;
       height: 350px;
       width: 50%;
       border-radius: 10px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center; }
       .somos__section__titulo__logo {
-        width: 250px;
-        object-fit: contain; }
+        width: 250px; }
+      .somos__section__titulo__h3 {
+        color: #E7E8EC;
+        margin-top: 10px;
+        font-weight: 400px;
+        border-bottom: solid #EB714B 1.8px; }
   .somos__section1 {
     width: 100%;
     height: 300px;
@@ -528,7 +568,7 @@ body {
     align-items: center;
     justify-content: center; }
     .somos__section1__h2 {
-      height: 200px;
+      height: 160px;
       width: 70%;
       display: flex;
       align-items: center;
@@ -537,29 +577,28 @@ body {
       color: #EB714B;
       border: solid #EB714B 2px;
       border-radius: 5px; }
-      .somos__section1__h2:hover {
-        background-color: #EB714B;
-        color: #1C2641;
-        border: none; }
   .somos__section__2 {
     height: 450px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column-reverse; }
     .somos__section__2__svg {
       height: 200px;
       margin: auto; }
     .somos__section__2__p {
+      color: #E7E8EC;
       padding: 20px;
       font-size: 1em;
-      background-color: #EB714B;
       border-radius: 10px;
       height: 350px;
       width: 50%;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      border-left: solid #EB714B 1.8px;
+      border-right: solid #EB714B 1.8px; }
     .somos__section__2 p {
       margin-bottom: 0; }
 
@@ -653,7 +692,8 @@ body {
   width: 100%;
   height: 1600px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 30px; }
   .reparaciones__img {
     width: 100%;
     height: 400px;
@@ -664,11 +704,74 @@ body {
       display: flex;
       flex-direction: row-reverse; }
     .reparaciones__img .img__reparaciones {
-      width: 150px;
-      object-fit: contain; }
+      width: 160px;
+      background-color: #EB714B;
+      padding: 10px; }
     .reparaciones__img__p {
       font-size: 0.9375em;
-      color: #E7E8EC; }
+      color: #E7E8EC;
+      border-right: solid 1px #EB714B;
+      width: 50%;
+      margin: 30px; }
+    .reparaciones__img__contenedor {
+      margin-left: 50px;
+      margin-right: 50px;
+      height: 300px;
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      background-color: #141c2f;
+      border: solid 1px #EB714B; }
+      .reparaciones__img__contenedor p {
+        color: #E7E8EC;
+        border-bottom: solid 1px #EB714B; }
+      .reparaciones__img__contenedor__antes {
+        height: 250px;
+        width: 50%;
+        margin: 20px; }
+      .reparaciones__img__contenedor__despues {
+        height: 250px;
+        width: 50%;
+        margin: 20px; }
+
+@media only screen and (max-width: 822px) {
+  .reparaciones {
+    height: 2000px; }
+    .reparaciones__img {
+      flex-direction: column;
+      margin-top: 60px;
+      margin-bottom: 50px; }
+      .reparaciones__img__contenedor {
+        width: 80%; } }
+
+@media only screen and (max-width: 576px) {
+  .trabajos {
+    height: 800px;
+    flex-direction: column; }
+    .trabajos__servicios {
+      margin-top: 30px;
+      width: 100%; }
+    .trabajos .robot {
+      width: 200px; }
+    .trabajos__img {
+      height: 300px; }
+  .reparaciones {
+    height: 2100px; }
+    .reparaciones__img {
+      flex-direction: column;
+      margin-top: 60px; }
+      .reparaciones__img__contenedor {
+        width: 100%; } }
+
+@media only screen and (max-width: 390px) {
+  .reparaciones__img {
+    height: 700px; }
+    .reparaciones__img__contenedor {
+      flex-direction: column;
+      height: 600px;
+      align-items: center; }
+  .reparaciones {
+    height: 3300px; } }
 
 .h3__nuevos {
   text-align: center;
@@ -735,6 +838,9 @@ body {
       font-size: 18px;
       color: #E7E8EC;
       text-align: center; }
+    .contacto__direccion__horario {
+      color: #E7E8EC;
+      font-size: 18px; }
   .contacto__ubicacion {
     width: 50%;
     height: 100%; }

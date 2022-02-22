@@ -57,6 +57,7 @@
     height: 1600px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
     &__img{
         width: 100%;
         height: 400px;
@@ -69,35 +70,127 @@
         }
 
         .img__reparaciones{
-            width: 150px;
-            object-fit: contain;
+            width: 160px;
+            background-color: $colorResalta;
+            padding: 10px;
+           
         }
 
         &__p{
-       font-size: 0.9375em;
-        color:$colorSubtitulo
+        font-size: 0.9375em;
+        color:$colorSubtitulo;
+        border-right: solid 1px $colorResalta;
+        width: 50%;
+        margin: 30px;
+        
+        
         }
+       
+      &__contenedor{
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 300px;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        background-color: darken($colorPrincipal, 5);
+        border: solid 1px $colorResalta;
+        p{
+            color: $colorSubtitulo;
+            border-bottom: solid 1px $colorResalta;
+            
+        }
+        &__antes{
+         
+            height: 250px;
+            width: 50%;
+            margin: 20px;
+           @extend %flex-columnCenter;
+        
+            
+        }
+
+        &__despues{
+            
+            height: 250px;
+            width: 50%;
+            margin: 20px;
+            @extend %flex-columnCenter;
+            
+        }
+      }
+        
+        
        
     }
 }
 
-@mixin mediaquerymobile {
+@include mediaquerytablet{
+  
+    .reparaciones{
+        height: 2000px;
+        &__img{
+          flex-direction: column;
+          margin-top: 60px;
+            margin-bottom: 50px;
+            &__contenedor{
+                width: 80%;
+                
+            }
+            &__p{
+                  }
+        }
+    }
+}
+
+
+
+@include mediaquerymobile {
+
+   
     .trabajos{
         height: 800px;
         flex-direction: column;
 
         &__servicios{
             margin-top: 30px;
+            width: 100%;
         }
+       .robot{
+           width: 200px;
+       }
+       &__img{
+           height: 300px;
+       }
     }
     
     .reparaciones{
-        height: 1700px;
+        height: 2100px;
         
         &__img{
             flex-direction: column;
             margin-top: 60px;
+            &__contenedor{
+            width: 100%;
+            }
             
         }
     }
+}
+
+@media only screen and (max-width:390px) {
+
+    .reparaciones__img{
+        height: 700px;
+        &__contenedor{
+            flex-direction: column;
+            height: 600px;
+            align-items: center;
+        }
+
+    }
+    .reparaciones{
+        height: 3300px;
+    }
+    
 }
