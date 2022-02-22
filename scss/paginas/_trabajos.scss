@@ -1,0 +1,103 @@
+.trabajos{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top:  solid $colorResalta 5px;
+    border-bottom:  solid $colorResalta 5px;
+    
+    &__servicios{
+        width: 50%;
+        height: 550px;
+
+        @extend %flex-columnCenter;
+        
+        &__h3{
+            font-size: $tamanoTitulos;
+            font-weight: 600px;
+            color: $colorResalta;
+        }
+
+        &__h4{
+            font-size: 1.25em;
+            font-weight: 600;
+            color: $colorSubtitulo;
+            border-bottom: solid $colorSubtitulo 1px;
+
+        }
+        &__ul__li{
+            
+            margin: 20px ;
+            color:$colorSubtitulo;
+        }
+
+    }
+    &__img{
+        width: 50%;
+        height: 550px;
+        @extend %flex-columnCenter;
+
+        .robot{
+            width: 300px;
+        }
+    }
+    &__h3{
+        color:$colorSubtitulo;
+        font-size: 1.875em;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+}
+.reparaciones{
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
+    &__img{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .reparaciones__2 .reparaciones__4{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .img__reparaciones{
+            width: 150px;
+            object-fit: contain;
+        }
+
+        &__p{
+       font-size: 0.9375em;
+        color:$colorSubtitulo
+        }
+       
+    }
+}
+
+@mixin mediaquerymobile {
+    .trabajos{
+        height: 800px;
+        flex-direction: column;
+
+        &__servicios{
+            margin-top: 30px;
+        }
+    }
+    
+    .reparaciones{
+        height: 1700px;
+        
+        &__img{
+            flex-direction: column;
+            margin-top: 60px;
+            
+        }
+    }
+}

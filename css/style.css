@@ -1,4 +1,8 @@
-.encabezado, .servicio__titulo, .garantia__titulo {
+.calidad__boton__a:hover, .garantia__boton__vermas__a:hover {
+  color: #E7E8EC;
+  background: linear-gradient(90deg, #eb714b 0%, rgba(217, 29, 0, 0.639093) 99%); }
+
+.encabezado, .servicio__titulo, .garantia__titulo, .trabajos__servicios, .trabajos__img, .contacto__direccion, .contacto__ubicacion, .formularios__contenedor-2 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +11,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  list-style: none; }
 
 a {
   text-decoration: none; }
@@ -299,7 +304,11 @@ body {
 .servicio {
   width: 100%;
   height: 600px;
-  background-color: #1C2641; }
+  background-color: #1C2641;
+  /* img{
+        height: 200px;
+        width: 155.84px;
+    } */ }
   .servicio__titulo {
     width: 100%;
     height: 150px; }
@@ -319,23 +328,29 @@ body {
     justify-content: space-around; }
     .servicio__galeria__img {
       display: inline-block;
-      object-fit: contain;
       width: 350px;
       height: 400px;
       margin: 30px;
       background-color: #EB714B;
-      padding: 20px;
-      text-align: center; }
+      padding: 10px;
+      text-align: center;
+      border-radius: 20px; }
       .servicio__galeria__img:hover {
         transform: scale(1.08); }
+      .servicio__galeria__img__caja {
+        width: 200px;
+        height: 250px;
+        margin: auto;
+        background-color: grey; }
+        .servicio__galeria__img__caja img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover; }
     .servicio__galeria__img1__parrafo, .servicio__galeria__img2__parrafo, .servicio__galeria__img3__parrafo {
       text-align: left;
       color: #E7E8EC;
       margin-top: 30px;
       font-size: 1em; }
-  .servicio img {
-    height: 200px;
-    width: 155.84px; }
 
 .calidad {
   margin-top: 100px;
@@ -597,3 +612,180 @@ body {
     .somos__section__2__h2 {
       display: block;
       order: 2; } }
+
+.trabajos {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: solid #EB714B 5px;
+  border-bottom: solid #EB714B 5px; }
+  .trabajos__servicios {
+    width: 50%;
+    height: 550px; }
+    .trabajos__servicios__h3 {
+      font-size: 2.1875em;
+      font-weight: 600px;
+      color: #EB714B; }
+    .trabajos__servicios__h4 {
+      font-size: 1.25em;
+      font-weight: 600;
+      color: #E7E8EC;
+      border-bottom: solid #E7E8EC 1px; }
+    .trabajos__servicios__ul__li {
+      margin: 20px;
+      color: #E7E8EC; }
+  .trabajos__img {
+    width: 50%;
+    height: 550px; }
+    .trabajos__img .robot {
+      width: 300px; }
+  .trabajos__h3 {
+    color: #E7E8EC;
+    font-size: 1.875em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px; }
+
+.reparaciones {
+  width: 100%;
+  height: 1600px;
+  display: flex;
+  flex-direction: column; }
+  .reparaciones__img {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .reparaciones__img .reparaciones__2 .reparaciones__4 {
+      display: flex;
+      flex-direction: row-reverse; }
+    .reparaciones__img .img__reparaciones {
+      width: 150px;
+      object-fit: contain; }
+    .reparaciones__img__p {
+      font-size: 0.9375em;
+      color: #E7E8EC; }
+
+.h3__nuevos {
+  text-align: center;
+  color: #EB714B;
+  font-size: 2.5em;
+  margin-top: 20px;
+  border-bottom: solid #E7E8EC 1px; }
+
+.nuevos {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .nuevos__celulares {
+    width: min-content;
+    height: 300px;
+    background-color: #E7E8EC;
+    display: flex; }
+    .nuevos__celulares__img {
+      height: 200px; }
+
+.h3__usados {
+  text-align: center;
+  color: #EB714B;
+  font-size: 2.5em;
+  margin-top: 20px;
+  border-bottom: solid #E7E8EC 1px; }
+
+.usados {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .usados__celulares {
+    width: 300px;
+    height: 300px;
+    background-color: #E7E8EC;
+    display: flex; }
+    .usados__celulares__img {
+      height: 200px; }
+
+.contacto {
+  width: 100%;
+  height: 655px;
+  display: flex;
+  flex-direction: row; }
+  .contacto__direccion {
+    width: 50%;
+    height: 665px; }
+    .contacto__direccion__h2 {
+      color: #EB714B;
+      font-size: 2.1875em;
+      font-weight: 600; }
+    .contacto__direccion__h3 {
+      color: #E7E8EC;
+      font-weight: 400px; }
+    .contacto__direccion__p {
+      font-size: 18px;
+      color: #E7E8EC;
+      text-align: center; }
+  .contacto__ubicacion {
+    width: 50%;
+    height: 100%; }
+    .contacto__ubicacion__h3 {
+      color: #EB714B;
+      font-size: 2.1875em;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .contacto__ubicacion__mapa {
+      width: 70%;
+      height: 80%; }
+
+.formularios {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .formularios__contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center; }
+    .formularios__contenedor__h3Dudas {
+      font-size: 2.1875em;
+      color: #EB714B;
+      margin-bottom: 15px;
+      text-align: center;
+      margin-left: 5px;
+      margin-right: 5px; }
+  .formularios__contenedor-2__h3Presupuestos {
+    font-size: 2.1875em;
+    color: #EB714B;
+    margin-bottom: 15px; }
+  .formularios label {
+    color: #E7E8EC; }
+
+@media only screen and (max-width: 822px) {
+  .contacto {
+    flex-direction: column;
+    height: 100vh; }
+    .contacto__direccion {
+      width: 100%; }
+    .contacto__ubicacion {
+      width: 100%;
+      flex-direction: column; }
+      .contacto__ubicacion__mapa {
+        width: 100%; }
+  .formularios {
+    flex-direction: column; }
+    .formularios__contenedor {
+      margin-top: 60px;
+      width: 100%; }
+    .formularios__contenedor-2 {
+      margin-top: 60px;
+      width: 100%; } }

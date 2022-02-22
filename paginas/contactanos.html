@@ -11,7 +11,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/a11a1742be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="icon" href="../imagenes/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,19 +23,8 @@
 
 <body>
     <header id="inicio" class="header">
-        <!-- <div class="header__div">
-            <ul class="header__ul">
-                <a class="a__logo" href="../index.html">
-                    <img class=" header__logo" src="../imagenes/logo.jpg" alt="logo moduloPhone">
-                </a>
-                <li class="header__ul__li"><a href="../index.html">Inicio</a></li>
-                <li class="header__ul__li"><a href="somos.html">Quienes Somos</a></li>
-                <li class="header__ul__li"><a href="trabajos.html">Trabajos</a></li>
-                <li class="header__ul__li"><a href="celulares.html">Celulares</a></li>
-                <li class="header__ul__li"><a class="contactanos" href="contactanos.html">Contactanos</a></li>
-            </ul>
-        </div> -->
-        <nav class=" header__nav navbar navbar-expand-lg navbar-dark ">
+
+        <nav class=" header__barra navbar navbar-expand-lg navbar-dark ">
             <div class=" header__barra__nav container-fluid">
                 <a class=" header__barra__nav__a navbar-brand" href="../index.html">
                     <img class=" header__logo " src="../imagenes/logo.jpg" alt="logo moduloPhone">
@@ -72,14 +62,14 @@
     <main class="main">
         <section class="contacto">
             <div class="contacto__direccion">
-                <h2 class="h2__contacto">
+                <h2 class="contacto__direccion__h2">
                     Contacto
                 </h2>
-                <h3 class="h3__direccion">Direccion</h3>
+                <h3 class="contacto__direccion__h3">Direccion</h3>
                 <p class=" contacto__direccion__p"> S.S. De Jujuy -Jujuy Barrio las Marias calle333</p>
             </div>
             <div class="contacto__ubicacion">
-                <H3 class="h3__ubicacion">Nuestra ubicacion</H3>
+                <H3 class="contacto__ubicacion__h3">Nuestra ubicacion</H3>
                 <iframe class="contacto__ubicacion__mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116449.47328827505!2d-65.37559602908044!3d-24.20516706472203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1640473550763!5m2!1ses!2sar"
                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -88,7 +78,7 @@
 
         <Section class="formularios">
             <div class="formularios__contenedor">
-                <h3 class="h3__dudas">Tenes alguna duda o consulta?</h3>
+                <h3 class="formularios__contenedor__h3Dudas">Tenes alguna duda o consulta?</h3>
                 <form class="form__dudas">
                     <ul>
                         <li>
@@ -110,7 +100,7 @@
             </div>
 
             <div id="presupuestos" class="formularios__contenedor-2">
-                <h3 class="h3__presupuestos">Presupuestos</h3>
+                <h3 class="formularios__contenedor-2__h3Presupuestos">Presupuestos</h3>
                 <form class="presupuestos">
                     <ul>
                         <li>
@@ -160,16 +150,20 @@
     <footer id="final" class="footer">
         <section class="footer__1">
             <article class="footer__1__redes">
-                <h2 class="footer__1__redes__h2">Seguinos en nuestras redes</h2>
-                <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980"
-                    target="_blank"> <i class="fab fa-facebook-square"></i> Facebook </a>
-                <a class="footer__1__redes__instagram" href="https//:Instagram.com" target="_blank">Instagram</a>
-                <a class="footer__1__redes__youtube" href="https//:youtube.com" target="_blank">Youtube</a>
+                <h2 class="footer__1__redes__h2">Nuestras redes</h2>
+                <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980"target="_blank"> 
+                    <i class="fab fa-facebook-square"></i>  </a>
+                <a class="footer__1__redes__instagram" href="https//:Instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="footer__1__redes__youtube" href="https//:youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </article>
             <article class="footer__1__contacto">
                 <h2 class="footer__1__contacto__h2">Contacto</h2>
-                <p>Correo: Fabriciohugoalberto16@gmail.com</p>
-                <p>Cel: +54 388-4446728</p>
+                <p> <i class="fas fa-envelope-square"></i> Fabriciohugoalberto16@gmail.com</p>
+                <p class="footer__1__contacto__p"><i class="fab fa-whatsapp"></i> +54 388-4446728</p>
             </article>
         </section>
         <section class="footer__2">

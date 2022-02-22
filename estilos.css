@@ -659,7 +659,7 @@ transform: rotate(10deg);
 }
 /* SIGUIENTE PAGINA:     TRABAJOS//////////////////////////// */
 
-.trabajos__section{
+.trabajos{
     width: 100%;
     height: 550px;
     display: flex;
@@ -670,7 +670,7 @@ transform: rotate(10deg);
     border-bottom:  solid #EB714B 10px;
     
 }
-.trabajos__section__servicios{
+.trabajos__servicios{
     width: 50%;
     height: 550px;
     display: flex;
@@ -679,7 +679,7 @@ transform: rotate(10deg);
     justify-content: center;
 
 }
-.trabajos__section__img{
+.trabajos__img{
     width: 50%;
     height: 550px;
     display: flex;
@@ -689,22 +689,21 @@ transform: rotate(10deg);
     
 }
 .robot{
-    border-radius: 50%;
     width: 300px;
 
 }
-.h3__trabajos{
+.trabajos__servicios__h3{
     font-size: 2.1875em;
     font-weight: 600;
     color: #EB714B;
 }
-.h4__trabajos{
+.trabajos__servicios__h4{
     font-size: 1.25em;
     font-weight: 600;
     color: #E7E8EC;
     border-bottom: solid #E7E8EC 1px;
 }
-.trabajos__ul__li{
+.trabajos__servicios__ul__li{
     list-style: none;
     margin: 20px ;
     color: #E7E8EC;
@@ -712,7 +711,7 @@ transform: rotate(10deg);
 }
 
 
-.h3__main{
+.trabajos__h3{
     color: #E7E8EC;
     font-size: 1.875em;
     font-weight: 600;
@@ -741,7 +740,7 @@ transform: rotate(10deg);
     display: flex;
     flex-direction: row-reverse;
 }
-.p__trabajos{
+.reparaciones__img__p{
 font-size: 0.9375em;
 color: #E7E8EC;
 }
@@ -764,7 +763,7 @@ align-items: center;
     margin-top: 20px;
     border-bottom: solid #E7E8EC 1px;
 }
-.celularN{
+.nuevos__celulares {
     width: min-content;
     height: 300px;
     background-color: #E7E8EC;
@@ -786,14 +785,14 @@ align-items: center;
     margin-top: 20px;
     border-bottom: solid #E7E8EC 1px;
 }
-.celularU{
+.usados__celulares{
     width: 300px;
     height: 300px;
     background-color: #E7E8EC;
     display: flex;
 }
 
-.img__nuevos{
+.nuevos__celulares__img, .usados__celulares__img{
     height: 200px;
     
 
@@ -826,18 +825,18 @@ align-items: center;
     width: 70%;
     height: 80%;
 }
-.h2__contacto{
+.contacto__direccion__h2{
     color: #EB714B;
     font-size: 2.1875em;
     font-weight: 600;
 }
-.h3__ubicacion{
+.contacto__ubicacion__h3{
     color: #EB714B;
     font-weight: 600;
     font-size: 2.1875em;
     margin-bottom: 20px;
 }
-.h3__direccion{
+.contacto__direccion__h3{
     color: #E7E8EC;
     font-weight: 400;
 }
@@ -863,7 +862,7 @@ text-align: center;
  align-items: center;
     width: 50%;
 }
-.h3__dudas{
+.formularios__contenedor__h3Dudas{
     font-size:2.1875em ;
     color: #EB714B;
     margin-bottom: 15px;
@@ -871,7 +870,7 @@ text-align: center;
     margin-left: 5px;
     margin-right: 5px;
 }
-.h3__presupuestos{
+.formularios__contenedor-2__h3Presupuestos{
     font-size:2.1875em ;
     color: #EB714B;
     margin-bottom: 15px;

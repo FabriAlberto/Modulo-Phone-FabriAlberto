@@ -11,7 +11,12 @@ $hovers: (
    secundario:  darken( #EB714B, 20),
    terciario:  #1C2641
 );
-    
+
+%hoverfuego{
+    color: $colorSubtitulo;
+    background: linear-gradient(90deg, rgba(235,113,75,1) 0%, rgba(217,29,0,0.639093137254902) 99%);
+}
+
 %flex-columnCenter{
     display: flex;
     align-items: center;
