@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     border-top:  solid $colorResalta 5px;
-    border-bottom:  solid $colorResalta 5px;
+    
     
     &__servicios{
         width: 50%;
@@ -47,8 +47,10 @@
         color:$colorSubtitulo;
         font-size: 1.875em;
         font-weight: 400;
-        text-align: center;
         margin-top: 40px;
+        border-bottom: solid $colorResalta 1px;
+        border-top: solid $colorResalta 1px;
+        text-align: center;
     }
 
 }
@@ -124,6 +126,34 @@
        
     }
 }
+
+.boton{
+      width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    p{
+     color: $colorResalta;
+    font-size: 25px;
+    margin-bottom: 30px
+
+
+    }
+    &__a{
+        @extend %botonFuego;
+            padding: 10px;
+            font-size: 1em;
+            color: $colorSubtitulo;
+            transition: .5s;
+
+            &:hover{
+                color: $colorSubtitulo;
+                @extend %hoverNeon;
+            }
+    }
+}
+
 
 @include mediaquerytablet{
   

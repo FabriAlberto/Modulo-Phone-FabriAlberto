@@ -1,8 +1,8 @@
-.calidad__boton__a, .garantia__boton__vermas__a, .somos__section1__h2:hover {
+.calidad__boton__a, .garantia__boton__vermas__a, .somos__section1__h2:hover, .boton__a {
   color: #E7E8EC;
   background: linear-gradient(90deg, #eb714b 0%, rgba(217, 29, 0, 0.639093) 99%); }
 
-.calidad__boton__a:hover, .garantia__boton__vermas__a:hover {
+.calidad__boton__a:hover, .garantia__boton__vermas__a:hover, .boton__a:hover {
   box-shadow: 0 0 10px #EB714B, 0 0 30px #EB714B, 0 0 60px #EB714B;
   transition-delay: .3s; }
 
@@ -659,8 +659,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-top: solid #EB714B 5px;
-  border-bottom: solid #EB714B 5px; }
+  border-top: solid #EB714B 5px; }
   .trabajos__servicios {
     width: 50%;
     height: 550px; }
@@ -685,8 +684,10 @@ body {
     color: #E7E8EC;
     font-size: 1.875em;
     font-weight: 400;
-    text-align: center;
-    margin-top: 40px; }
+    margin-top: 40px;
+    border-bottom: solid #EB714B 1px;
+    border-top: solid #EB714B 1px;
+    text-align: center; }
 
 .reparaciones {
   width: 100%;
@@ -734,6 +735,24 @@ body {
         width: 50%;
         margin: 20px; }
 
+.boton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .boton p {
+    color: #EB714B;
+    font-size: 25px;
+    margin-bottom: 30px; }
+  .boton__a {
+    padding: 10px;
+    font-size: 1em;
+    color: #E7E8EC;
+    transition: .5s; }
+    .boton__a:hover {
+      color: #E7E8EC; }
+
 @media only screen and (max-width: 822px) {
   .reparaciones {
     height: 2000px; }
@@ -773,28 +792,61 @@ body {
   .reparaciones {
     height: 3300px; } }
 
+.main-celulares {
+  background-color: #E7E8EC; }
+
+.bannerOferta {
+  width: 100%;
+  height: 130px;
+  background-color: #1C2641;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
+  .bannerOferta i {
+    font-size: 2em;
+    color: #EB714B; }
+  .bannerOferta p {
+    color: #E7E8EC; }
+  .bannerOferta__descuento {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; }
+
 .h3__nuevos {
   text-align: center;
   color: #EB714B;
   font-size: 2.5em;
-  margin-top: 20px;
-  border-bottom: solid #E7E8EC 1px; }
+  border-bottom: solid #E7E8EC 1px;
+  padding-top: 30px;
+  margin-bottom: -50px; }
 
 .nuevos {
   width: 100%;
   height: 600px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap; }
   .nuevos__celulares {
-    width: min-content;
-    height: 300px;
-    background-color: #E7E8EC;
-    display: flex; }
+    width: 200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #bebfc2;
+    border-radius: 10px; }
+    .nuevos__celulares__precio {
+      margin: 10px; }
+    .nuevos__celulares__p {
+      margin: 0px 10px 0px 10px; }
     .nuevos__celulares__img {
-      height: 200px; }
+      height: 200px;
+      border-bottom: solid 1px #d5d8df; }
 
 .h3__usados {
   text-align: center;
