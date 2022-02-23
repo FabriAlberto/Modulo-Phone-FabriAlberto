@@ -819,7 +819,7 @@ body {
 
 .h3__nuevos {
   text-align: center;
-  color: #EB714B;
+  color: #1C2641;
   font-size: 2.5em;
   border-bottom: solid #E7E8EC 1px;
   padding-top: 30px;
@@ -843,14 +843,32 @@ body {
     .nuevos__celulares__precio {
       margin: 10px; }
     .nuevos__celulares__p {
-      margin: 0px 10px 0px 10px; }
+      margin: 0px 10px 0px 10px;
+      color: #4d4d4d; }
     .nuevos__celulares__img {
       height: 200px;
       border-bottom: solid 1px #d5d8df; }
 
+.anuncio {
+  width: 100%;
+  height: 130px;
+  background-color: #d1341f;
+  display: flex;
+  align-items: center;
+  flex-direction: row; }
+  .anuncio i {
+    color: #E7E8EC;
+    margin-left: 20px;
+    font-size: 2.5em; }
+  .anuncio p {
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    color: #E7E8EC; }
+
 .h3__usados {
   text-align: center;
-  color: #EB714B;
+  color: #1C2641;
   font-size: 2.5em;
   margin-top: 20px;
   border-bottom: solid #E7E8EC 1px; }
@@ -860,16 +878,59 @@ body {
   height: 600px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap; }
   .usados__celulares {
-    width: 300px;
+    width: 200px;
     height: 300px;
     background-color: #E7E8EC;
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #bebfc2;
+    border-radius: 10px; }
     .usados__celulares__img {
-      height: 200px; }
+      margin-top: 5px;
+      height: 200px;
+      object-fit: contain;
+      border-bottom: solid 1px #d5d8df; }
+
+.boton__celulares {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .boton__celulares p {
+    color: #1C2641;
+    font-size: 25px;
+    margin-bottom: 30px; }
+  .boton__celulares a {
+    background-color: #1C2641;
+    padding: 10px;
+    font-size: 1em;
+    color: #E7E8EC;
+    transition: .5s;
+    margin-bottom: 20px; }
+    .boton__celulares a:hover {
+      color: #E7E8EC;
+      box-shadow: 0 0 15px #2947df, 0 0 35px #2947df, 0 0 65px #2947df;
+      transition-delay: .3s; }
+
+@media only screen and (max-width: 600px) {
+  .main-celulares {
+    height: 3000px; }
+  .usados {
+    height: 1250px;
+    margin-top: -50px;
+    flex-direction: column; }
+  .nuevos {
+    height: 1250px;
+    flex-direction: column; }
+  .anuncio {
+    height: 150px; }
+    .anuncio p {
+      font-size: 14px; } }
 
 .contacto {
   width: 100%;
