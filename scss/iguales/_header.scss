@@ -157,7 +157,7 @@ transform: translateY(-35px);
 }
 @include mediaquerys (991px){
     .header__barra{
-        background-color: #1C2641;
+        background-color: $colorPrincipal;
 
         &__a{
             color: $colorSubtitulo;
