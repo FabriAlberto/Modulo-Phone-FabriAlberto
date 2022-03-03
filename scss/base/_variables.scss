@@ -1,5 +1,5 @@
 
-$colorPrincipal:#1C2641;
+$colorPrincipal:darken(#1C2641,10);
 $colorResalta:#EB714B;
 $colorSubtitulo:#E7E8EC;
 
@@ -19,7 +19,7 @@ $hovers: (
 
 %hoverNeon{
     box-shadow: 0 0 10px #EB714B, 0 0 30px #EB714B, 0 0 60px #EB714B;
-    transition-delay: .3s;
+    transition-delay: .1s;
 
 }
 

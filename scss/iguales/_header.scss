@@ -1,17 +1,19 @@
+
+
 .header{
-    background-image:url(../../imagenes/header.jpg);
+    background-image:url(../../imagenes/header6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
     height:100vh;
     text-align: center;
-
     &__logo{
         height: 50px;
         width: 50px;
         object-fit: cover;
         margin-right: 10px;
+
 
         &:hover{
             animation-name:giro;
@@ -31,12 +33,15 @@
     justify-content: center;
 
         &__boton{
-            color:#6B6C72;
+            color:#ced0dd;
             animation-name: flecha0;
             animation-timing-function: ease-in;
             animation-duration: 1s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
+            &:hover{
+                color: $colorResalta;
+            }
 
         }
     }
@@ -74,14 +79,14 @@
         margin-top: 160px;
         font-size: $tamanoH1;
         font-weight: 600;
-        border-radius: 5px;
-        color: $colorPrincipal;
-        backdrop-filter: blur(30px);
+        color:$colorSubtitulo;
+        border-bottom: solid 2px $colorResalta;
 
         &__p{
             color: $colorSubtitulo;
-            font-size:.47em;
+            font-size: 2em;
             text-align: center;
+            
         }
     }
 
@@ -111,11 +116,11 @@
         color: map-get($hovers, secundario );
 }
 .navbar-dark .navbar-nav .nav-link.active{
-        color: $colorPrincipal;
+        color: $colorSubtitulo;
 }
  .navbar-dark .navbar-nav .nav-link.active:hover{
         color: map-get($hovers , primario );
-        border-bottom: solid $colorPrincipal 1px;
+        border-bottom: solid $colorSubtitulo 1px;
         padding-bottom: 5px;
 
 }

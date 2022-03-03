@@ -66,8 +66,10 @@
                     Contacto
                 </h2>
                 <h3 class="contacto__direccion__h3">Direccion</h3>
-                <p class=" contacto__direccion__p"> <i class="fas fa-map-marker-alt"></i> S.S. De Jujuy -Jujuy Barrio las Marias calle333</p>
-                <p class="contacto__direccion__horario"> <i class="fas fa-clock"></i> Lunes a Sabado 00:09am - 21:00pm</p>
+                <p class=" contacto__direccion__p"> <i class="fas fa-map-marker-alt"></i> S.S. De Jujuy -Jujuy Barrio
+                    las Marias calle333</p>
+                <p class="contacto__direccion__horario"> <i class="fas fa-clock"></i> Lunes a Sabado 00:09am - 21:00pm
+                </p>
             </div>
             <div class="contacto__ubicacion">
                 <H3 class="contacto__ubicacion__h3">Nuestra ubicacion</H3>
@@ -79,70 +81,81 @@
 
         <Section class="formularios">
             <div class="formularios__contenedor">
-                <h3 class="formularios__contenedor__h3Dudas">Tenes alguna duda o consulta?</h3>
-                <form class="form__dudas">
-                    <ul>
-                        <li>
-                            <label for="nombres">Nombres:</label>
-                            <input type="text" id="nombres" name="nombres" >
-                            <label for="Apellido"> Apellido:</label>
-                            <input type="text" id="Apellido" name="apellido">
-                        </li>
-                        <li> <label for="email">Email:</label>
-                            <input type="email" id="email" placeholder="nombre@ejemplo.com" name="email">
-                        </li>
-                        <li> <textarea placeholder="Escriba su duda o consulta" name="duda" id="consulta" cols="30"
-                                rows="10"></textarea>
-                        </li>
-                    </ul>
-                    <input type="submit" id="enviar" value="Enviar" name="enviar">
-                    <input type="reset" id="borrar" value="Borrar" name="borrar">
-                </form>
+                <section class="formularios__contenedor1">
+                    <h3 class="formularios__contenedor1__h3Dudas">DUDAS Y CONSULTAS</h3>
+                    <form class="form__dudas">
+                        <ul>
+                            <li>
+                                <input type="text" id="nombres" name="nombres"
+                                    placeholder="Escribi tu nombre y apellido">
+                            </li>
+                            <li>
+                                <input type="email" id="email" placeholder="nombre@ejemplo.com" name="email">
+                            </li>
+                            <li> <textarea placeholder="Escriba su duda o consulta" name="duda" id="consulta" cols="30"
+                                    rows="10"></textarea>
+                            </li>
+                        </ul>
+                        <input type="submit" id="enviar" value="Enviar" name="enviar">
+                    </form>
+                </section>
+
+                <section class="formularios__contenedor2">
+                    <img class="formularios__contenedor2__img" src="../imagenes/formulario.jpg"
+                        alt="computadora-apple-mcbook-enviar-correo-send">
+                </section>
+
             </div>
 
             <div id="presupuestos" class="formularios__contenedor-2">
-                <h3 class="formularios__contenedor-2__h3Presupuestos">Presupuestos</h3>
-                <form class="presupuestos">
-                    <ul>
-                        <li>
-                            <label for="gmail">Email</label>
-                            <input type="email" id="gmail" placeholder="nombre@ejemplo.com" name="email">
-                        </li>
-                        <li>
-                            <label for="marca">Marca:</label>
-                            <select name="marca" id="marca">
-                                <option value="#"> </option>
-                                <option value="samsung">Samsung</option>
-                                <option value="xiaomi">Xiaomi</option>
-                                <option value="lg">Lg</option>
-                                <option value="motorola">Motorola</option>
-                                <option value="apple">Apple</option>
-                            </select>
-                            <label for="modelo">Modelo:</label>
-                            <input type="text" id="modelo" name="modelo">
-                        </li>
-                        <li>
-                            <label for="Problema">Problema:</label>
-                            <select name="Problema" id="Problema">
-                                <option value=""> </option>
-                                <option value="modulo">Cambio de modulo</option>
-                                <option value="display">Cambio de Display y/o touch</option>
-                                <option value="camara">Cambio de Camara/s</option>
-                                <option value="botoones">Cambio de Boton/es</option>
-                                <option value="bateria">Cambio de Bateria</option>
-                                <option value="placapin de carga">Cambio de pin o placa de carga</option>
-                                <option value="parlante">Cambio de Parlante,microfono,sensor</option>
-                                <option value="tapa">Cambio de Tapa</option>
-                                <option value="otros">OTROS</option>
-                                
-                            </select>
-                            <input type="text" id="otros" placeholder="Otros" name="otros">
-                        </li>
 
-                    </ul>
-                    <input type="submit" value="Enviar" name="enviar">
-                    <input type="reset" value="Borrar" name="borrar">
-                </form>
+                <section class="formularios__contenedor-2__1">
+
+                    <h3 class="formularios__contenedor-2__1__h3Presupuestos">PRESUPUESTOS</h3>
+                    <form class="presupuestos">
+                        <ul>
+                            <li>
+                                <input type="email" id="gmail" placeholder="correo" name="email">
+                            </li>
+                            <li>
+                                <select name="marca" id="marca">
+                                    <option value="#">Marca</option>
+                                    <option value="samsung">Samsung</option>
+                                    <option value="xiaomi">Xiaomi</option>
+                                    <option value="lg">Lg</option>
+                                    <option value="motorola">Motorola</option>
+                                    <option value="apple">Apple</option>
+                                </select>
+
+                                <input type="text" id="modelo" name="modelo" placeholder="Modelo">
+                            </li>
+                            <li>
+
+                                <select name="Problema" id="Problema" >
+                                    <option value=""> </option>
+                                    <option value="modulo">Cambio de modulo</option>
+                                    <option value="display">Cambio de Display y/o touch</option>
+                                    <option value="camara">Cambio de Camara/s</option>
+                                    <option value="botoones">Cambio de Boton/es</option>
+                                    <option value="bateria">Cambio de Bateria</option>
+                                    <option value="placapin de carga">Cambio de pin o placa de carga</option>
+                                    <option value="parlante">Cambio de Parlante,microfono,sensor</option>
+                                    <option value="tapa">Cambio de Tapa</option>
+                                    <option value="otros">OTROS</option>
+
+                                </select>
+                                <input type="text" id="otros" placeholder="Otros" name="otros">
+                            </li>
+
+                        </ul>
+                        <input type="submit" value="Enviar" name="enviar">
+                    </form>
+                </section>
+
+                <section class="formularios__contenedor-2__2">
+                    <i class="fab fa-apple"></i>
+                </section>
+
             </div>
         </Section>
         <a class=" boton__vermas__inicio" href="#inicio"> <i class="bi bi-arrow-up-circle-fill"></i> </a>
@@ -152,8 +165,9 @@
         <section class="footer__1">
             <article class="footer__1__redes">
                 <h2 class="footer__1__redes__h2">Nuestras redes</h2>
-                <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980" jtarget="_blank"> 
-                    <i class="fab fa-facebook-square"></i>  </a>
+                <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980"
+                    jtarget="_blank">
+                    <i class="fab fa-facebook-square"></i> </a>
                 <a class="footer__1__redes__instagram" href="https//:Instagram.com" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
