@@ -86,17 +86,20 @@
                     <form class="form__dudas">
                         <ul>
                             <li>
-                                <input type="text" id="nombres" name="nombres"
-                                    placeholder="Escribi tu nombre y apellido">
+                                <input class="form__dudas__input" type="text" id="nombres" name="nombres"
+                                    placeholder="Nombre y apellido">
                             </li>
                             <li>
-                                <input type="email" id="email" placeholder="nombre@ejemplo.com" name="email">
+                                <input class="form__dudas__input" type="email" id="email" placeholder="Correo" name="email">
                             </li>
-                            <li> <textarea placeholder="Escriba su duda o consulta" name="duda" id="consulta" cols="30"
+                            <li> <textarea class="form__dudas__input" placeholder="Duda o consulta" name="duda" id="consulta" cols="30"
                                     rows="10"></textarea>
                             </li>
                         </ul>
-                        <input type="submit" id="enviar" value="Enviar" name="enviar">
+                        <section class="form__dudas__boton">
+                            
+                            <input  class=" form__dudas__boton__enviar"type="submit" id="enviar" value="Enviar" name="enviar">
+                        </section>
                     </form>
                 </section>
 
@@ -113,12 +116,12 @@
 
                     <h3 class="formularios__contenedor-2__1__h3Presupuestos">PRESUPUESTOS</h3>
                     <form class="presupuestos">
-                        <ul>
-                            <li>
-                                <input type="email" id="gmail" placeholder="correo" name="email">
+                        <ul class="presupuestos__ul">
+                            <li class="presupuestos__ul__li">
+                                <input class="presupuestos__ul__li__input" type="email" id="gmail" placeholder="correo" name="email">
                             </li>
                             <li>
-                                <select name="marca" id="marca">
+                                <select class="presupuestos__ul__li__input  presupuestos__ul__li__select" name="marca" id="marca">
                                     <option value="#">Marca</option>
                                     <option value="samsung">Samsung</option>
                                     <option value="xiaomi">Xiaomi</option>
@@ -127,12 +130,15 @@
                                     <option value="apple">Apple</option>
                                 </select>
 
-                                <input type="text" id="modelo" name="modelo" placeholder="Modelo">
                             </li>
                             <li>
 
-                                <select name="Problema" id="Problema" >
-                                    <option value=""> </option>
+                                <input class="presupuestos__ul__li__input" type="text" id="modelo" name="modelo" placeholder="Modelo">
+                            </li>
+                            <li>
+
+                                <select class="presupuestos__ul__li__input  presupuestos__ul__li__select" name="Problema" id="Problema" >
+                                    <option value="">Problema </option>
                                     <option value="modulo">Cambio de modulo</option>
                                     <option value="display">Cambio de Display y/o touch</option>
                                     <option value="camara">Cambio de Camara/s</option>
@@ -144,16 +150,22 @@
                                     <option value="otros">OTROS</option>
 
                                 </select>
-                                <input type="text" id="otros" placeholder="Otros" name="otros">
+                            </li>
+                            <li>
+                                <input class="presupuestos__ul__li__input" type="text" id="otros" placeholder="Otros" name="otros">
+                                
                             </li>
 
                         </ul>
-                        <input type="submit" value="Enviar" name="enviar">
+                        <section class="presupuestos__boton">
+
+                            <input class="presupuestos__boton__input" type="submit" value="Enviar" name="enviar">
+                        </section>
                     </form>
                 </section>
 
                 <section class="formularios__contenedor-2__2">
-                    <i class="fab fa-apple"></i>
+                    <i class="fas fa-wrench"></i>
                 </section>
 
             </div>

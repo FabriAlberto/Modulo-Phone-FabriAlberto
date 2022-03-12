@@ -27,6 +27,7 @@
        &__horario{
            color: $colorSubtitulo;
            font-size:18px;
+           text-align: center;
        }
     }
 
@@ -57,7 +58,7 @@
     &__contenedor{
         display: flex;
         flex-direction: row;
-        width: 70%;
+        width: 100%;
         height: 550px;
         align-items: center;
         margin-bottom: 100px;
@@ -74,6 +75,51 @@
                 margin-right: 5px;
                 
             }
+            .form__dudas{
+                padding: 0px 50px;
+               display: flex;
+               flex-direction: column;
+                &__input{
+                     width: 100%;
+                     padding: 6px;
+                     margin: 8px 0px;
+                     border: none;
+                   background-color: darken($colorPrincipal,2.5);
+                   border-bottom: solid 2px $colorResalta;
+                   color: #fff ;
+
+                   &:focus{
+                    background: linear-gradient(to bottom, transparent, #000);
+                    outline: none;
+
+                }
+                }
+                &__boton{
+                       width: 100%;
+                       display: flex;
+                       justify-content: center;
+                       
+                    &__enviar{
+                        padding: 6px;
+                        margin-left: 30px;
+                        width: 50%;
+                        @extend %botonFuego;
+                        border: none;
+
+                        &:hover{
+                            @extend %hoverNeon;
+                        }
+                        
+                    }
+                }
+              
+                textarea{
+                    min-height: 160px;
+                    resize: none;
+
+                }
+                
+            }
         }
 
         &2{
@@ -85,7 +131,7 @@
              object-fit: cover;
              width: 100%;
              height: 100%;
-             filter: opacity(50%);
+             filter: opacity(40%);
             }
         }
       
@@ -95,8 +141,9 @@
         display: flex;
         flex-direction: row;
         align-items: center ;
-        width: 80%;
-        height: 500px;
+        justify-content: center;
+        width: 100%;
+        height: 550px;
         background-color: darken($colorPrincipal,2.5);
 
 
@@ -105,7 +152,7 @@
           height: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
 
             &__h3Presupuestos{
                 font-size: $tamanoTitulos;
@@ -113,31 +160,76 @@
                 color: $colorResalta;
                 margin-bottom: 15px;
                 
+
             }
+            .presupuestos{
+            
+                width:100% ;
+                padding: 0px 50px;
+
+             &__ul__li__input{
+                width: 100%;
+                padding: 6px;
+               margin-right: 20px;
+               margin-top: 20px;
+                border: none;
+              background-color: darken($colorPrincipal,2.5);
+              border-bottom: solid 2px $colorResalta;
+              color: #fff ;
+
+              &:focus{
+                background: linear-gradient(to bottom, transparent, #000);
+                  outline: none;
+              }
+            }
+             
+            &__ul__li__select{
+                border: none;
+                border-right: solid 2px $colorResalta;
+            }
+
+            &__boton{
+             width: 100%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+            
+             &__input{
+                 width: 50%;
+                 padding: 6px;
+                 @extend %botonFuego;
+                 border: none;
+
+                 &:hover{
+                     @extend %hoverNeon;
+                 }
+             }
+            }
+        }
        
         }
 
         &__2{
             width: 30%;
             height: 100%;
-            background-color: $colorPrincipal;
+            background-color: darken($colorPrincipal,2.5);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-
-
             
-            .fa-apple{
+           
+
+
+            .fa-wrench{
             
                 color: #fff;
-                font-size: 4em;
+                font-size: 8em;
                 animation-name: girar;
-                animation-duration: 6s;
+                animation-duration: 2s;
                 animation-iteration-count: infinite;
-                animation-timing-function: ease-in-out;
+                animation-timing-function: ease-in;
                 animation-direction: alternate;
-                animation-delay: 2s;
                     
             }
 
@@ -156,48 +248,16 @@
 @keyframes girar {
                   
     0%{
-       
+       transform:rotate(-45deg);
+       color: #fff;
     }
-    10%{
-        transform: translateX(140px);
+    45%{
+     transform: rotate(35deg);
+     color: $colorResalta;
+     
     }
-    20%{
-        color: red;
-    }
-    30%{
-        transform: translateY( -200px) scale(1.5);
-
-    }
-    40%{
-        transform: translate(-100px, -100px) scale(2);
-       
-    }
-    50%{
-        transform: translate(0, 0px) scale(1);
-        color: #fff;
-    }
-    60%{
-        transform: translate(0, -100px) scale(1.5);
-        color: $colorPrincipal;
-    }
-    70%{
-        color: #fff;
-        transform: translate(0, 0px) scale(1);
-        
-    }
-    80%{
-        transform: translate(0, -70px) scale(1.5);
-        color: $colorPrincipal;
-    }
-    90%{
-        transform: translate(0, 0px) scale(0.5);
-        color: #fff;
-    }
-    100%{
-        transform: scale(1);
-        color: #fff;
-        
-    }
+    
+    
 }
 
 @media only screen and(max-width: 822px) {

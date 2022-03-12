@@ -94,7 +94,7 @@
         width: 50%;
         display: flex;
         flex-direction: row;
-        background-color: darken($colorPrincipal, 5);
+        background-color: lighten($colorPrincipal, 3);
         border: solid 1px $colorResalta;
         p{
             color: $colorSubtitulo;
