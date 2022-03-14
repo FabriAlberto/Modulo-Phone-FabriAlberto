@@ -18,11 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200;1,300&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header id="inicio" class="header">
- 
+
         <nav class=" header__barra navbar navbar-expand-lg navbar-dark  ">
             <section class=" header__barra__nav container-fluid">
                 <a class=" header__barra__nav__a navbar-brand" href="../index.html">
@@ -59,23 +60,23 @@
         <section class="somos">
             <article class="somos__section">
 
-                <div class="somos__section__titulo">
+                <div data-aos="fade-up" class="somos__section__titulo">
                     <img class="somos__section__titulo__logo " src="../imagenes/logo.jpg" alt="logo">
                     <h3 class="somos__section__titulo__h3">MODULO PHONE JUJUY(M.P)</h3>
 
                 </div>
-                <img class="somos__section__svg" src="../imagenes/undraw_feeling_proud_qne1.svg"
+                <img data-aos="fade-up" class="somos__section__svg" src="../imagenes/undraw_feeling_proud_qne1.svg"
                     alt="undraw_feeling_proud_qne1">
             </article>
 
-            <article class="somos__section1">
+            <article data-aos="fade-up" class="somos__section1">
                 <h2 class="somos__section1__h2">¿Quienes Somos?</h2>
             </article>
 
             <article class="somos__section__2">
                 <img class="somos__section__2__svg" src="../imagenes/undraw_personal_info_re_ur1n.svg"
                     alt="undraw_personal_info_re_ur1n">
-                <article class="somos__section__2__p">
+                <article data-aos="flip-right"  data-aos-duration="1200"  class="somos__section__2__p">
                     <p> Somos una empresa que se dedica a la venta y a la reparacion de telefonos moviles con mas de 2
                         años
                         de
@@ -109,12 +110,13 @@
         <section class="footer__1">
             <article class="footer__1__redes">
                 <h2 class="footer__1__redes__h2">Nuestras redes</h2>
-                <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980" target="_blank"> 
-                    <i class="fab fa-facebook-square"></i>  </a>
+                <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980"
+                    target="_blank">
+                    <i class="fab fa-facebook-square"></i> </a>
                 <a class="footer__1__redes__instagram" href="https//:Instagram.com" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a class="footer__1__redes__youtube" href="https//:youtube.com" target="_blank">
+                <a class="footer__1__redes__youtube" href="https://www.youtube.com/channel/UCTkzMtkwD5ViuPIewnA-8_Q" target="_blank">
                     <i class="fab fa-youtube"></i>
                 </a>
             </article>
@@ -135,6 +137,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

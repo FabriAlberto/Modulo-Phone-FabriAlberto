@@ -186,6 +186,9 @@
             &__ul__li__select{
                 border: none;
                 border-right: solid 2px $colorResalta;
+                &:focus{
+                    background-color: $colorPrincipal;
+                }
             }
 
             &__boton{
@@ -294,4 +297,44 @@
         }
     }
     
+} 
+
+@include mediaquerymobile
+{
+.formularios{
+
+&__contenedor{
+
+    flex-direction: column;
+
+    &1{
+        margin-top: 20px;
+       .form__dudas{
+           padding: 0px;
+       }
+    }
+    &2{
+        display: none;
+    }
+
+}
+&__contenedor-2{
+    margin-top: -15px;
+    flex-direction: column  ;
+    height: 580px;
+
+&__1{
+    margin-top: 20px;
+
+    .presupuestos{
+        padding: 0px;
+    }
+}
+&__2{
+    margin-top: 10px;
+}
+    
+}
+}
+
 }

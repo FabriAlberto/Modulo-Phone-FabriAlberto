@@ -17,6 +17,7 @@
     <link rel="icon" href="../imagenes/logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200;1,300&display=swap"
         rel="stylesheet">
 </head>
@@ -61,7 +62,7 @@
 
     <main class="main">
         <section class="contacto">
-            <div class="contacto__direccion">
+            <div data-aos="fade-up" data-aos-duration="1200" class="contacto__direccion">
                 <h2 class="contacto__direccion__h2">
                     Contacto
                 </h2>
@@ -71,7 +72,7 @@
                 <p class="contacto__direccion__horario"> <i class="fas fa-clock"></i> Lunes a Sabado 00:09am - 21:00pm
                 </p>
             </div>
-            <div class="contacto__ubicacion">
+            <div data-aos="fade-up" data-aos-duration="1200" class="contacto__ubicacion">
                 <H3 class="contacto__ubicacion__h3">Nuestra ubicacion</H3>
                 <iframe class="contacto__ubicacion__mapa"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116449.47328827505!2d-65.37559602908044!3d-24.20516706472203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses!2sar!4v1640473550763!5m2!1ses!2sar"
@@ -80,27 +81,31 @@
         </section>
 
         <Section class="formularios">
-            <div class="formularios__contenedor">
+            <div data-aos="zoom-in-up" class="formularios__contenedor">
                 <section class="formularios__contenedor1">
                     <h3 class="formularios__contenedor1__h3Dudas">DUDAS Y CONSULTAS</h3>
-                    <form class="form__dudas">
+                    <form id="form" class="form__dudas">
                         <ul>
                             <li>
                                 <input class="form__dudas__input" type="text" id="nombres" name="nombres"
-                                    placeholder="Nombre y apellido">
+                                    placeholder="Nombre y apellido" required>
                             </li>
                             <li>
-                                <input class="form__dudas__input" type="email" id="email" placeholder="Correo" name="email">
+                                <input class="form__dudas__input" type="email" id="email" placeholder="correo"
+                                    name="email" required>
                             </li>
-                            <li> <textarea class="form__dudas__input" placeholder="Duda o consulta" name="duda" id="consulta" cols="30"
-                                    rows="10"></textarea>
+                            <li> <textarea class="form__dudas__input" placeholder="Duda o consulta" name="duda"
+                                    id="consulta" cols="30" rows="10" required></textarea>
                             </li>
                         </ul>
                         <section class="form__dudas__boton">
-                            
-                            <input  class=" form__dudas__boton__enviar"type="submit" id="enviar" value="Enviar" name="enviar">
+
+                            <!--  <input  type="submit" id="enviar" value="Enviar"
+                                name="enviar"> -->
+                            <input type="submit" class=" form__dudas__boton__enviar" id="button" value="Enviar">
                         </section>
                     </form>
+                        
                 </section>
 
                 <section class="formularios__contenedor2">
@@ -110,7 +115,7 @@
 
             </div>
 
-            <div id="presupuestos" class="formularios__contenedor-2">
+            <div data-aos="zoom-in-up" id="presupuestos" class="formularios__contenedor-2">
 
                 <section class="formularios__contenedor-2__1">
 
@@ -118,10 +123,12 @@
                     <form class="presupuestos">
                         <ul class="presupuestos__ul">
                             <li class="presupuestos__ul__li">
-                                <input class="presupuestos__ul__li__input" type="email" id="gmail" placeholder="correo" name="email">
+                                <input class="presupuestos__ul__li__input" type="email" id="gmail" placeholder="correo"
+                                    name="email" required>
                             </li>
                             <li>
-                                <select class="presupuestos__ul__li__input  presupuestos__ul__li__select" name="marca" id="marca">
+                                <select class="presupuestos__ul__li__input  presupuestos__ul__li__select" name="marca"
+                                    id="marca" required>
                                     <option value="#">Marca</option>
                                     <option value="samsung">Samsung</option>
                                     <option value="xiaomi">Xiaomi</option>
@@ -133,11 +140,13 @@
                             </li>
                             <li>
 
-                                <input class="presupuestos__ul__li__input" type="text" id="modelo" name="modelo" placeholder="Modelo">
+                                <input class="presupuestos__ul__li__input" type="text" id="modelo" name="modelo"
+                                    placeholder="Modelo" required>
                             </li>
                             <li>
 
-                                <select class="presupuestos__ul__li__input  presupuestos__ul__li__select" name="Problema" id="Problema" >
+                                <select class="presupuestos__ul__li__input  presupuestos__ul__li__select"
+                                    name="Problema" id="Problema" required>
                                     <option value="">Problema </option>
                                     <option value="modulo">Cambio de modulo</option>
                                     <option value="display">Cambio de Display y/o touch</option>
@@ -152,8 +161,9 @@
                                 </select>
                             </li>
                             <li>
-                                <input class="presupuestos__ul__li__input" type="text" id="otros" placeholder="Otros" name="otros">
-                                
+                                <input class="presupuestos__ul__li__input" type="text" id="otros" placeholder="Otros"
+                                    name="otros" required>
+
                             </li>
 
                         </ul>
@@ -170,7 +180,6 @@
 
             </div>
         </Section>
-        <a class=" boton__vermas__inicio" href="#inicio"> <i class="bi bi-arrow-up-circle-fill"></i> </a>
     </main>
 
     <footer id="final" class="footer">
@@ -178,12 +187,13 @@
             <article class="footer__1__redes">
                 <h2 class="footer__1__redes__h2">Nuestras redes</h2>
                 <a class="footer__1__redes__facebook" href="https://www.facebook.com/Modulo-Phone-Jujuy-105775895283980"
-                    jtarget="_blank">
+                    target="_blank">
                     <i class="fab fa-facebook-square"></i> </a>
                 <a class="footer__1__redes__instagram" href="https//:Instagram.com" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a class="footer__1__redes__youtube" href="https//:youtube.com" target="_blank">
+                <a class="footer__1__redes__youtube" href="https://www.youtube.com/channel/UCTkzMtkwD5ViuPIewnA-8_Q"
+                    target="_blank">
                     <i class="fab fa-youtube"></i>
                 </a>
             </article>
@@ -204,6 +214,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+
+   
+  
 
 </body>
 

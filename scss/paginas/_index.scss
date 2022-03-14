@@ -92,10 +92,7 @@
 
         }
     }
-    /* img{
-        height: 200px;
-        width: 155.84px;
-    } */
+    
 }
 .calidad{
     margin-top: 100px;
@@ -286,6 +283,15 @@
             }
         }
     }
+}
+
+.subir{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
 }
 @include mediaquerydesktop{
     .encabezado__contenedor__p{

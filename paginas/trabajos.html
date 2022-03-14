@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200;1,300&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
 
     <main>
         <section class="trabajos">
-            <article class="trabajos__servicios">
+            <article data-aos="zoom-in-up"  data-aos-duration="1000" class="trabajos__servicios">
                 <h3 class="trabajos__servicios__h3">Nuestros Servicios</h3>
                 <h4 class="trabajos__servicios__h4">Hardware:</h4>
                 <ul class="trabajos__servicios__ul">
@@ -76,7 +77,7 @@
                     <li class="trabajos__servicios__ul__li">Cambios de parlantes, microfonos, camaras, etc.</li>
                 </ul>
             </article>
-            <div class="trabajos__img">
+            <div data-aos="zoom-in-up"  data-aos-duration="1000" class="trabajos__img">
                 <img class="robot" src="../imagenes/undraw_services_-5-tv9.svg" alt="undraw_services_-5-tv9">
             </div>
 
@@ -109,13 +110,13 @@
                     <div class="reparaciones__img__contenedor__antes">
                         <p>ANTES</p>
                         <img class="img__reparaciones" src="../imagenes/Cambio-de-placa-de-carga-motoe5.jpg"
-                        alt="placa de carga-motoe5- motorola">
+                            alt="placa de carga-motoe5- motorola">
                     </div>
 
                     <div class="reparaciones__img__contenedor__despues">
                         <P>DESPUES</P>
                         <img class="img__reparaciones" src="../imagenes/Cambio-de-placa-de-carga-motoe5-despues.jpg"
-                    alt="placa de carga-motoe5- motorola">
+                            alt="placa de carga-motoe5- motorola">
                     </div>
 
                 </div>
@@ -131,14 +132,14 @@
                     <div class="reparaciones__img__contenedor__antes">
                         <P>ANTES</P>
                         <img class="img__reparaciones" src="../imagenes/Cambio-de-flex-a5-antes.jpg"
-                        alt="flex retroceso a5 -flex samsung a5">
+                            alt="flex retroceso a5 -flex samsung a5">
                     </div>
-                    
+
                     <div class="reparaciones__img__contenedor__despues">
                         <P>DESPUES</P>
                         <img class="img__reparaciones" src="../imagenes/Cambio-de-flex-a5-despues.jpg"
-                    alt="flex retroceso a5 -flex samsung a5">
-                    </div> 
+                            alt="flex retroceso a5 -flex samsung a5">
+                    </div>
 
                 </div>
 
@@ -156,13 +157,13 @@
                     <div class="reparaciones__img__contenedor__antes">
                         <P>ANTES</P>
                         <img class="img__reparaciones" src="../imagenes/Cambio-de-bateria-s6-antes.jpg"
-                        alt="bateria samsung s6-samsung-bateria-cambio de bateria s6">
+                            alt="bateria samsung s6-samsung-bateria-cambio de bateria s6">
                     </div>
-                    
+
                     <div class="reparaciones__img__contenedor__despues">
                         <P>DESPUES</P>
                         <img class="img__reparaciones" src="../imagenes/Cambio-de-bateria-s6-despues.jpg"
-                    alt="bateria samsung s6-samsung-bateria-cambio de bateria s6">
+                            alt="bateria samsung s6-samsung-bateria-cambio de bateria s6">
                     </div>
 
                 </div>
@@ -175,9 +176,9 @@
                 </p>
             </article>
         </section>
-        <div class="boton">
+        <div  data-aos="fade-up"  data-aos-duration="1000" class="boton">
             <p>TE GUSTO NUESTRO TRABAJO? TE DAMOS UN PRESUPUESTO AL INSTANTE</p>
-              <a class=" boton__a" href="../paginas/contactanos.html">PRESUPUESTAR</a>
+            <a class=" boton__a" href="../paginas/contactanos.html">PRESUPUESTAR</a>
         </div>
 
 
@@ -197,7 +198,7 @@
                 <a class="footer__1__redes__instagram" href="https//:Instagram.com" target="_blank">
                     <i class="fab fa-instagram"></i>
                 </a>
-                <a class="footer__1__redes__youtube" href="https//:youtube.com" target="_blank">
+                <a class="footer__1__redes__youtube" href="https://www.youtube.com/channel/UCTkzMtkwD5ViuPIewnA-8_Q" target="_blank">
                     <i class="fab fa-youtube"></i>
                 </a>
             </article>
@@ -219,6 +220,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
