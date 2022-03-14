@@ -5,6 +5,7 @@
     text-align: center;
     
     &__contenedor{
+        background-color:$colorPrincipal ;
         &__h2{
             color: $colorResalta;
             font-size: $tamanoTitulos;
@@ -33,6 +34,7 @@
         width: 100%;
         height: 150px;
        @extend %flex-columnCenter;
+       background-color: $colorPrincipal;
         &__h3{
             text-align:start;
            color:$colorResalta;
