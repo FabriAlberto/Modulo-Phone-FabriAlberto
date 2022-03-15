@@ -1,13 +1,7 @@
 
 
 .header{
-    /* background-image:url(../../imagenes/header6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height:100vh;
-    text-align: center; */
+  
     &__logo{
         height: 50px;
         width: 50px;
@@ -86,7 +80,23 @@
         font-size: $tamanoH1;
         font-weight: 600;
         color:$colorSubtitulo;
-        border-right: solid 2px $colorResalta;
+        border-right: solid 3px $colorResalta;
+        animation-name: parpadeo;
+        animation-duration: 1.1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: step-end;
+
+
+        @keyframes parpadeo {
+            0%{
+             border-right: solid 3px $colorResalta;
+            }
+            50%{
+                border-right: solid 3px #4b4b4b00;
+            }
+        }
+
+
 
         &__p{
             color: $colorSubtitulo;
@@ -99,7 +109,7 @@
     
 }
 .titulo{
-    margin-top: -14vh;
+    margin-top: -11.5vh;
     background-image:url(../../imagenes/header6.jpg);
     background-repeat: no-repeat;
     background-size: cover;

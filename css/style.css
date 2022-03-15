@@ -50,80 +50,86 @@ body {
   body {
     font-size: 14px; } }
 
-.header {
-  /* background-image:url(../../imagenes/header6.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height:100vh;
-    text-align: center; */ }
-  .header__logo {
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    margin-right: 10px; }
-    .header__logo:hover {
-      animation-name: giro;
-      animation-iteration-count: 1;
-      animation-timing-function: ease-in;
-      animation-duration: .5s;
-      animation-delay: 0.3s;
-      animation-direction: reverse; }
-  .header__titulo {
-    width: 100%;
-    height: 100vh; }
-  .header__flecha {
-    height: 40vh;
-    width: 100%;
+.header__logo {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  margin-right: 10px; }
+  .header__logo:hover {
+    animation-name: giro;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .5s;
+    animation-delay: 0.3s;
+    animation-direction: reverse; }
+
+.header__titulo {
+  width: 100%;
+  height: 100vh; }
+
+.header__flecha {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .header__flecha__boton {
+    color: #ced0dd;
+    animation-name: flecha0;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; }
+    .header__flecha__boton:hover {
+      color: #EB714B; }
+
+.header__barra {
+  width: 100%; }
+  .header__barra__nav {
     display: flex;
-    align-items: flex-end;
-    justify-content: center; }
-    .header__flecha__boton {
-      color: #ced0dd;
-      animation-name: flecha0;
-      animation-timing-function: ease-in;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate; }
-      .header__flecha__boton:hover {
-        color: #EB714B; }
-  .header__barra {
-    width: 100%; }
-    .header__barra__nav {
+    justify-content: space-around;
+    background-color: none; }
+    .header__barra__nav__a {
+      width: 25%;
       display: flex;
-      justify-content: space-around;
-      background-color: none; }
-      .header__barra__nav__a {
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-    .header__barra__as {
-      width: 75%;
-      display: flex;
+      align-items: center;
       justify-content: center; }
-    .header__barra__a {
-      margin-left: 8px;
-      font-size: 1em;
-      font-weight: 900px;
-      color: #0d111d; }
-      .header__barra__a:hover {
-        color: #EB714B; }
-  .header__h1__index {
-    display: inline-block;
-    margin-top: 240px;
-    font-size: 2.8125em;
-    font-weight: 600;
+  .header__barra__as {
+    width: 75%;
+    display: flex;
+    justify-content: center; }
+  .header__barra__a {
+    margin-left: 8px;
+    font-size: 1em;
+    font-weight: 900px;
+    color: #0d111d; }
+    .header__barra__a:hover {
+      color: #EB714B; }
+
+.header__h1__index {
+  display: inline-block;
+  margin-top: 240px;
+  font-size: 2.8125em;
+  font-weight: 600;
+  color: #E7E8EC;
+  border-right: solid 3px #EB714B;
+  animation-name: parpadeo;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-end; }
+
+@keyframes parpadeo {
+  0% {
+    border-right: solid 3px #EB714B; }
+  50% {
+    border-right: solid 3px #4b4b4b00; } }
+  .header__h1__index__p {
     color: #E7E8EC;
-    border-right: solid 2px #EB714B; }
-    .header__h1__index__p {
-      color: #E7E8EC;
-      font-size: 2em;
-      text-align: center; }
+    font-size: 2em;
+    text-align: center; }
 
 .titulo {
-  margin-top: -14vh;
+  margin-top: -11.5vh;
   background-image: url(../../imagenes/header6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -238,16 +244,18 @@ body {
         font-size: 1.5em;
         font-weight: 400;
         color: #E7E8EC; }
-      .footer__1__contacto p {
+      .footer__1__contacto a {
         font-size: 1em;
         color: #aeb1bf; }
-        .footer__1__contacto p .fab {
+        .footer__1__contacto a:hover {
+          color: #EB714B; }
+        .footer__1__contacto a .fab {
           font-size: 2.1em; }
-          .footer__1__contacto p .fab:hover {
+          .footer__1__contacto a .fab:hover {
             color: #EB714B; }
-        .footer__1__contacto p .fas {
+        .footer__1__contacto a .fas {
           font-size: 2.1em; }
-          .footer__1__contacto p .fas:hover {
+          .footer__1__contacto a .fas:hover {
             color: #EB714B; }
       .footer__1__contacto__p {
         margin-left: -140px; }
