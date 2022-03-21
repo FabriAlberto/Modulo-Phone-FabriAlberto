@@ -17,7 +17,7 @@ body{
 }
 
 .bi-arrow-up-circle-fill{
-    position: absolute;
+position: absolute;
 color: #ced0dd;
 font-size: 3em;
 margin-left: 40px;
@@ -27,8 +27,20 @@ animation-timing-function: ease-in;
 animation-duration: 1s;
 animation-iteration-count: infinite;
 animation-direction: alternate-reverse;
+  &:hover{
+      color: $colorResalta;
+  }
 
- }
+}
+.subir{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 50px;
+    
+}
 
 @keyframes flecha2 {
 0%{
@@ -40,6 +52,18 @@ transform: translateY(35px);
 
 }
 
+@include mediaquerydesktop{
+
+    .subir{
+        justify-content: center;
+        align-items: center;
+    }
+    .bi-arrow-up-circle-fill{
+   
+    margin-left: -20px;
+    
+    }
+}
 
 
 @media only screen and (max-width: 576px){

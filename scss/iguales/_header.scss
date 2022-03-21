@@ -7,17 +7,13 @@
         width: 50px;
         object-fit: cover;
         margin-right: 10px;
-
-
-        &:hover{
             animation-name:giro;
-            animation-iteration-count: 1    ;
+            animation-iteration-count:2;
             animation-timing-function: ease-in;
             animation-duration: .5s;
-            animation-delay: 0.3s;
             animation-direction:reverse;
+            animation-delay:3s;
 
-        }
     }
     &__titulo{
         width: 100%;
@@ -117,6 +113,7 @@
     width: 100%;
     height:100vh;
     text-align: center;
+    @extend %flex-columnCenter;
 }
 
 
@@ -195,7 +192,11 @@ transform: translateY(-35px);
             justify-content: flex-start;
         }
     }
-
+    .titulo{
+        width: 100%;
+        height:calc(100vh-76px);
+        
+    }
     .navbar-dark .navbar-nav .nav-link.active {
         color: #E7E8EC;
         height:115px;
